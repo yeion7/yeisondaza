@@ -44,13 +44,62 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-facebook-analytics`,
+      options: {
+        appId: '',
+      },
+    },
     `gatsby-plugin-feed`,
+    'gatsby-plugin-catch-links',
+    'gatsby-plugin-sitemap',
+    `gatsby-plugin-sass`,
+
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Natalia Acevedo',
+        short_name: 'Natalia',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        theme_color: '#a2466c',
+        display: 'minimal-ui',
+        icons: [
+          {
+            src: `/favicon.png`,
+            sizes: `192x192`,
+            type: `image/ico`,
+          },
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        mergeSecurityHeaders: true,
+        mergeLinkHeaders: true,
+        mergeCachingHeaders: true,
+        generateMatchPathRewrites: true,
       },
     },
   ],
