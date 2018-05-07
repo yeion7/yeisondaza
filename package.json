@@ -35,7 +35,8 @@
     "lodash": "^4.17.5",
     "netlify-cms": "^1.7.0",
     "prismjs": "^1.14.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "typography-theme-doelger": "^0.15.11"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
