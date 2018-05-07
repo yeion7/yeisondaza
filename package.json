@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "Natalia Benitez Acevedo site",
+  "description": "Personal site Natalia Acevedo",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Yeison Daza <jahir045@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/yeion7/nataliaacevedo/issues"
   },
   "dependencies": {
     "gatsby": "^1.9.250",
@@ -33,13 +33,13 @@
     "gh-pages": "^1.1.0",
     "prettier": "^1.12.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/yeion7/nataliaacevedo#readme",
   "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/yeion7/nataliaacevedo.git"
   },
   "scripts": {
     "dev": "gatsby develop",
