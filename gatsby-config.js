@@ -3,7 +3,7 @@ module.exports = {
     title: 'Natalia Benitez Acevedo',
     author: 'Yeison Daza',
     description: 'website Natalia Benitez Acevedo.',
-    siteUrl: 'https://nataliaacevedo.com/',
+    siteUrl: 'https://nataliaacevedo.com',
   },
   pathPrefix: '/',
   plugins: [
