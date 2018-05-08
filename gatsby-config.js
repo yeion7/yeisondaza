@@ -59,6 +59,7 @@ module.exports = {
     `gatsby-plugin-feed`,
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-sass`,
 
     `gatsby-plugin-offline`,

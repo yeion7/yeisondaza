@@ -13,11 +13,18 @@ import '../css/index.scss'
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteURL = get(this, 'props.data.site.siteMetadata.siteUrl')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <section>
-        <SEO siteTitle={siteTitle} />
+        <SEO
+          title={siteTitle}
+          description="Consultora de marketing"
+          image={Natalia}
+          url={siteURL}
+          isPost={false}
+        />
 
         <header
           style={{ backgroundImage: `url(${BackgroundImage})` }}
@@ -28,6 +35,18 @@ class BlogIndex extends React.Component {
               <img src={Natalia} alt="Natalia foto" className="header-img" />
               <h1 className="header-title">Natalia Acevedo</h1>
               <h2 className="header-subtitle">Consultora de marketing</h2>
+
+              <div>
+                <a className="no-link" href="">
+                  <i className="icon-facebook" />
+                </a>
+                <a className="no-link" href="">
+                  <i className="icon-whatsapp" />
+                </a>
+                <a className="no-link" href="">
+                  <i className="icon-mail" />
+                </a>
+              </div>
             </div>
           </div>
         </header>
@@ -70,6 +89,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
