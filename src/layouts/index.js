@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Logo from '../assets/logo2.svg'
 
 import { rhythm, scale } from '../utils/typography'
 
@@ -65,7 +66,7 @@ class Template extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        {header}
+        <img src={Logo} alt="Logo" />
         {children()}
       </div>
     )
