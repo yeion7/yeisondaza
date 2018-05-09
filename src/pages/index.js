@@ -51,6 +51,8 @@ class BlogIndex extends React.Component {
                   className="no-link"
                   href="https://www.facebook.com/NataliaAcevedoMKT/ "
                   target="_blank"
+                  aria-label="url fanpage"
+                  rel="noopener"
                 >
                   <i className="icon-facebook" />
                 </a>
@@ -58,6 +60,8 @@ class BlogIndex extends React.Component {
                   target="_blank"
                   className="no-link"
                   href="https://api.whatsapp.com/send?phone=573156845565"
+                  aria-label="url whatsapp"
+                  rel="noopener"
                 >
                   <i className="icon-whatsapp" />
                 </a>
@@ -65,6 +69,8 @@ class BlogIndex extends React.Component {
                   target="_blank"
                   className="no-link"
                   href="https://meetings.hubspot.com/natalia-benitez-acevedo-1306"
+                  aria-label="url agendar cita"
+                  rel="noopener"
                 >
                   <i className="icon-mail" />
                 </a>
