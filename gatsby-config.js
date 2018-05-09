@@ -15,6 +15,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -41,19 +48,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: 'UA-118864279-1',
       },
     },
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
-        pixelId: '',
+        pixelId: '1532181616895324',
       },
     },
     {
       resolve: `gatsby-plugin-facebook-analytics`,
       options: {
-        appId: '',
+        appId: '1532181616895324',
       },
     },
     `gatsby-plugin-feed`,
@@ -72,13 +79,7 @@ module.exports = {
         background_color: '#f7f0eb',
         theme_color: '#a2466c',
         display: 'minimal-ui',
-        icons: [
-          {
-            src: `/favicon.png`,
-            sizes: `192x192`,
-            type: `image/ico`,
-          },
-        ],
+        icon: '/favicon.png',
       },
     },
     `gatsby-plugin-react-helmet`,

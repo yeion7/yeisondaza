@@ -46,9 +46,10 @@ const SEO = ({ title, description, image, url, isPost }) => {
 
   return (
     <Helmet>
+      <html lang="es" />
       <title>{title}</title>
-      {/* <meta name="description" content={description} /> */}
-      {/* <meta name="image" content={image} /> */}
+      <meta name="description" content={description} />
+      <meta name="image" content={image} />
 
       <script type="application/ld+json">
         {JSON.stringify(schemaOrgJSONLD)}
