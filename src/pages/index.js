@@ -29,13 +29,17 @@ class BlogIndex extends React.Component {
         />
 
         <header
-          style={{ backgroundImage: `url(${BackgroundImage})` }}
+          style={{
+            backgroundImage: `url(${
+              data.background.childImageSharp.resolutions.src
+            })`,
+          }}
           className="header"
         >
           <div className="header-inner">
             <div className="header-content">
               <Img
-                resolutions={data.file.childImageSharp.resolutions}
+                resolutions={data.natalia.childImageSharp.resolutions}
                 alt="Natalia foto"
                 className="header-img"
               />
@@ -112,10 +116,17 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query IndexQuery {
-    file(relativePath: { regex: "/natalia.jpg/" }) {
+    natalia: file(relativePath: { regex: "/natalia.jpg/" }) {
       childImageSharp {
-        resolutions(width: 125, height: 125) {
-          ...GatsbyImageSharpResolutions
+        resolutions(width: 250, height: 250) {
+          ...GatsbyImageSharpResolutions_withWebp
+        }
+      }
+    }
+    background: file(relativePath: { regex: "/background.jpg/" }) {
+      childImageSharp {
+        resolutions(width: 1200, quality: 100) {
+          ...GatsbyImageSharpResolutions_withWebp
         }
       }
     }
