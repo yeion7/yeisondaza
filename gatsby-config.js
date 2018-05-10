@@ -82,6 +82,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-feed`,
     {
       resolve: 'gatsby-plugin-typography',
       options: {
