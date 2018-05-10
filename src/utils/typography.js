@@ -2,6 +2,9 @@ import Typography from 'typography'
 import doelgerTheme from 'typography-theme-doelger'
 
 doelgerTheme.overrideThemeStyles = () => ({
+  '.post > p': {
+    fontSize: '21px',
+  },
   'a.gatsby-resp-image-link': {
     boxShadow: 'none',
   },

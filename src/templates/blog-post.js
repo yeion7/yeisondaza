@@ -23,7 +23,7 @@ export const Post = ({
       style={{
         marginLeft: 'auto',
         marginRight: 'auto',
-        maxWidth: rhythm(35),
+        maxWidth: rhythm(30),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
@@ -45,7 +45,7 @@ export const Post = ({
       >
         {frontmatter.date}
       </p>
-      <PostContent content={content} />
+      <PostContent content={content} className="post" />
       <hr
         style={{
           marginBottom: rhythm(1),
