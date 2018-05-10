@@ -5,7 +5,6 @@ module.exports = {
     description: 'website Natalia Benitez Acevedo.',
     siteUrl: 'https://nataliaacevedo.com',
   },
-  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
