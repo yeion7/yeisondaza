@@ -2,9 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/img
+media_folder: src/assets
 public_folder: /img
-publish_mode: editorial_workflow
 
 collections:
   - name: "blog"
@@ -20,9 +19,3 @@ collections:
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
       - {label: "Descripción", name: "description", widget: "text"}
       - {label: "Post", name: "body", widget: "markdown"}
-      - {label: "Formulario", name: "form", widget: object, fields: [
-          {label: "Titulo", name: "title", widget: string, default: "Agenda una llamada"},
-          {label: "ID Lista", name: "listID", widget: string},
-          {label: "Con mensaje", name: "showMessage", widget: "boolean", default: false}]
-        }
-  

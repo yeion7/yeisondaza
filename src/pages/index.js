@@ -16,7 +16,7 @@ class BlogIndex extends React.Component {
     const data = get(this, 'props.data')
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteURL = get(this, 'props.data.site.siteMetadata.siteUrl')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const posts = get(this, 'props.data.allMarkdownRemark.edges') || []
 
     return (
       <section>
