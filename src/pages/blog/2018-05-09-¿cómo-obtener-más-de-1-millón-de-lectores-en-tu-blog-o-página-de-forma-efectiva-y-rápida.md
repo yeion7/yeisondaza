@@ -1,6 +1,6 @@
 ---
 templateKey: blog
-path: 'como-obtener-mas-de-un-millon-de-lectores '
+path: como-obtener-mas-de-un-millon-de-lectores
 imagen: /img/background.jpg
 title: >-
   ¿Cómo obtener más de 1 millón de lectores en tu blog o página de forma
