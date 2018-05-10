@@ -81,11 +81,11 @@ class BlogIndex extends React.Component {
 
         <main className="feed">
           {posts.map(({ node }) => {
-            const title = get(node, 'frontmatter.title') || node.fields.slug
+            const title = get(node, 'frontmatter.title')
             return (
-              <article className="card" key={node.fields.slug}>
+              <article className="card" key={node.frontmatter.path}>
                 <Link
-                  to={node.fields.slug}
+                  to={node.frontmatter.path}
                   className="card-image-link"
                   aria-label={title}
                 >
@@ -96,7 +96,7 @@ class BlogIndex extends React.Component {
                 </Link>
                 <div className="card-content">
                   <Link
-                    to={node.fields.slug}
+                    to={node.frontmatter.path}
                     className="card-content-link"
                     aria-label={title}
                   >
@@ -146,12 +146,10 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
-          fields {
-            slug
-          }
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            path
           }
         }
       }
