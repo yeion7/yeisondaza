@@ -63,7 +63,7 @@ export const Post = ({
       >
         {previous && (
           <li>
-            <Link to={previous.fields.slug} rel="prev">
+            <Link to={previous.frontmatter.path} rel="prev">
               ← {previous.frontmatter.title}
             </Link>
           </li>
@@ -71,7 +71,7 @@ export const Post = ({
 
         {next && (
           <li>
-            <Link to={next.fields.slug} rel="next">
+            <Link to={next.frontmatter.path} rel="next">
               {next.frontmatter.title} →
             </Link>
           </li>
@@ -108,7 +108,7 @@ export const pageQuery = graphql`
         siteUrl
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       id
       html
       frontmatter {

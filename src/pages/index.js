@@ -90,7 +90,9 @@ class BlogIndex extends React.Component {
                   aria-label={title}
                 >
                   <div
-                    style={{ backgroundImage: `url(${BackgroundImage})` }}
+                    style={{
+                      backgroundImage: `url(${node.frontmatter.imagen})`,
+                    }}
                     className="card-image"
                   />
                 </Link>
@@ -150,6 +152,7 @@ export const pageQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
             title
             path
+            imagen
           }
         }
       }

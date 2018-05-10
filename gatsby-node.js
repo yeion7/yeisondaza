@@ -45,10 +45,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           const next = index === 0 ? null : posts[index - 1].node
 
           createPage({
-            path: post.node.frontmatter.path,
+            path: post.node.frontmatter.path.trim(),
             component: blogPost,
             context: {
-              slug: post.node.fields.slug,
+              slug: post.node.frontmatter.path,
               previous,
               next,
             },
