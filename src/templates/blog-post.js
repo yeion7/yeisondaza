@@ -31,7 +31,7 @@ export const Post = ({
         title={frontmatter.title}
         description={frontmatter.description}
         image={frontmatter.imagen}
-        url={`${siteUrl}/${frontmatter.path}`}
+        url={`${siteUrl}/blog/${frontmatter.path}`}
         isPost
       />
       <h1>{frontmatter.title}</h1>
