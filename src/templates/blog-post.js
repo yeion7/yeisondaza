@@ -30,7 +30,7 @@ export const Post = ({
       <SEO
         title={frontmatter.title}
         description={frontmatter.description}
-        image={frontmatter.imagen}
+        image={`${siteUrl}${frontmatter.imagen}`}
         url={`${siteUrl}/${frontmatter.path}`}
         isPost
       />
