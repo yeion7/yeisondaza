@@ -13,10 +13,8 @@ export const Post = ({
   previous,
   next,
   siteTitle,
-  description,
   image,
   siteUrl,
-  path,
   contentComponent,
 }) => {
   const PostContent = contentComponent || Content
@@ -29,12 +27,11 @@ export const Post = ({
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
       <SEO
         title={frontmatter.title}
-        description={description}
-        image={image}
-        url={`${siteUrl}/${path}`}
+        description={frontmatter.description}
+        image={frontmatter.imagen}
+        url={`${siteUrl}/${frontmatter.path}`}
         isPost
       />
       <h1>{frontmatter.title}</h1>
