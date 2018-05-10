@@ -18,22 +18,8 @@ export const Post = ({
   siteUrl,
   path,
   contentComponent,
-  ...rest
 }) => {
   const PostContent = contentComponent || Content
-  console.log({
-    content,
-    frontmatter,
-    previous,
-    next,
-    siteTitle,
-    description,
-    image,
-    siteUrl,
-    path,
-    contentComponent,
-    rest,
-  })
   return (
     <div
       style={{
@@ -131,9 +117,9 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        # description
-        # imagen
-        # path
+        description
+        imagen
+        path
       }
     }
   }
