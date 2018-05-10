@@ -1,7 +1,7 @@
 ---
 templateKey: blog
 path: 'como-obtener-mas-de-un-millon-de-lectores '
-imagen: /static/background.jpg
+imagen: /img/background.jpg
 title: >-
   ¿Cómo obtener más de 1 millón de lectores en tu blog o página de forma
   efectiva y rápida?
@@ -11,17 +11,10 @@ description: >-
   es mostrar a todos sus futuros clientes que su producto funciona, y la mejor
   manera de hacerlo es exhibir a sus clientes más felices y exitosos.
 ---
+
 Una de las estrategias más potentes que funcionan para las grandes empresas, es mostrar a todos sus futuros clientes que su producto funciona, y la mejor manera de hacerlo es exhibir a sus clientes más felices y exitosos. Aqui esta el secreto de la estrategia ‘POSTER BOY” convertirse en ese cliente feliz que está siendo exhibido.
 
-
-
-
-
 La metodología: la estrategia es básica, encontrar a una empresa establecida y que tenga tu mismo público objetivo y conviértete en su poster boy. Existen casos reales donde blogs o página han pasado de tener 0 seguidores o lectores a más de 10,000 en menos de 4 meses.
-
-
-
-
 
 Como hacerlo:
 
