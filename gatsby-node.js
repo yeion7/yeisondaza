@@ -18,9 +18,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             ) {
               edges {
                 node {
-                  fields {
-                    slug
-                  }
                   frontmatter {
                     title
                     path
@@ -61,13 +58,18 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
+  const { frontmatter } = node
 
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
+  if (frontmatter) {
+    const { imagen } = frontmatter
+    if (imagen) {
+      if (imagen.indexOf('/img') === 0) {
+        createNodeField({
+          name: `thumbnail`,
+          node,
+          value: `.${imagen}`,
+        })
+      }
+    }
   }
 }

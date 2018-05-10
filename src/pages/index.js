@@ -86,14 +86,17 @@ class BlogIndex extends React.Component {
               <article className="card" key={node.frontmatter.path}>
                 <Link
                   to={node.frontmatter.path}
-                  className="card-image-link"
+                  className="card-image-link no-link"
                   aria-label={title}
                 >
-                  <div
+                  <Img
+                    resolutions={
+                      node.fields.thumbnail.childImageSharp.resolutions
+                    }
                     style={{
                       backgroundImage: `url(${node.frontmatter.imagen})`,
                     }}
-                    className="card-image"
+                    className="card-image "
                   />
                 </Link>
                 <div className="card-content">
@@ -148,6 +151,15 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
+          fields {
+            thumbnail {
+              childImageSharp {
+                resolutions(width: 360) {
+                  ...GatsbyImageSharpResolutions
+                }
+              }
+            }
+          }
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
