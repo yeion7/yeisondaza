@@ -72,4 +72,12 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       }
     }
   }
+
+  if (node.internal.type === `MarkdownRemark`) {
+    createNodeField({
+      name: `slug`,
+      node,
+      value: `/${frontmatter.path}`,
+    })
+  }
 }
