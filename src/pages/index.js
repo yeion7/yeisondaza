@@ -31,8 +31,9 @@ class BlogIndex extends React.Component {
         <header
           style={{
             backgroundImage: `url(${
-              data.background.childImageSharp.resolutions.src
-            })`,
+              data.background.childImageSharp.sizes.srcWebp
+            }), url(${data.background.childImageSharp.sizes.src})
+            `,
           }}
           className="header"
         >
@@ -136,8 +137,8 @@ export const pageQuery = graphql`
     }
     background: file(relativePath: { regex: "/background.jpg/" }) {
       childImageSharp {
-        resolutions(width: 1200, quality: 100) {
-          ...GatsbyImageSharpResolutions_withWebp
+        sizes(quality: 100) {
+          ...GatsbyImageSharpSizes_withWebp
         }
       }
     }
@@ -155,7 +156,7 @@ export const pageQuery = graphql`
             thumbnail {
               childImageSharp {
                 resolutions(width: 360) {
-                  ...GatsbyImageSharpResolutions
+                  ...GatsbyImageSharpResolutions_withWebp
                 }
               }
             }
