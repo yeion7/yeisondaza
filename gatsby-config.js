@@ -63,7 +63,6 @@ module.exports = {
         appId: '1532181616895324',
       },
     },
-    `gatsby-plugin-feed`,
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
