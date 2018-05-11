@@ -3,7 +3,7 @@ templateKey: blog
 path: cómo-construir-un-embudo-de-ventas-efectivo
 imagen: /img/0_f7bcw5qefp5m6ryk.jpeg
 title: ¿Cómo construir un embudo de ventas efectivo?
-date: '2018-05-11T13:20:57-05:00'
+date: '2018-05-01T13:20:57-05:00'
 description: >-
   Un embudo de ventas es una forma de medir y conocer mucho mejor a tus clientes
   potenciales, el cual abarca todas las actividades desde atraer nuevos
