@@ -3,7 +3,7 @@ templateKey: blog
 path: las-5-ps-de-marketing
 imagen: /img/1_iqqgzbmc_o287qxakvftww.jpeg
 title: Las 5 p’s de Marketing
-date: '2018-05-18T13:28:23-05:00'
+date: '2018-03-14T13:28:23-05:00'
 description: >-
   Cuando intentamos hacer un plan de marketing para hacer de nuestro proyecto un
   éxito, uno de los pasos más importantes es el estudio de la competencia, para
