@@ -12,13 +12,10 @@ description: >-
 ---
 ¿Alguna vez te ha pasado que tu contenido no genera ningún tipo de interacción, o sientes que no encuentras como inspirarte? **El éxito de muchas campañas y de muchos negocios online depende en un porcentaje altísimo de la forma en como escribimos en internet**, hacerlo no es fácil, lograr que nuestra audiencia conecte es una tarea ardua que requiere de práctica y de conocimiento, **pero aquí te dejo 10 tips que seguro te van a funcionar, te van a hacer la tarea mas fácil y te van traer resultados super efectivos.**
 
-![](/img/1_ra5pii9cqpd73ower295dw.png)
+![null](/img/1_ra5pii9cqpd73ower295dw.png)
 
 1. **Piensa en tu audiencia:** Tener en cuenta los gustos de tu audiencia y sus intereses puede ser un punto fundamental, **escribe para ellos, intenta dar soluciones a posibles problemas que tengan, intenta comprender que es lo que les genera mas interés dentro de tus publicaciones y dales mas de eso**. Además recuerda que antes de escribir debes pensar lo que quieres comunicar y no te dejes llevar tan rápido. Estás en una conversación bidireccional, es decir tu objetivo es lograr despertar interés, y que el publico se sienta identificado.
-
-
-
-2.  T**en en cuenta tus objetivos:** Objetivizar cada contenido que realizamos puede dar un resultado muy exitoso para tu marca, el marketing de contenidos es tal vez uno de los más importantes dentro de la estrategia digital,** es mucho más fácil escribir cuando tienes unos objetivos claros y sobre todo cuando tienes una radiografía completa de cómo es el tipo de audiencia que tienes**. Tu mensaje será más directo y persuasivo porque tú mejor que nadie sabes lo que están esperando ellos de ti.
+2. T**en en cuenta tus objetivos:** Objetivizar cada contenido que realizamos puede dar un resultado muy exitoso para tu marca, el marketing de contenidos es tal vez uno de los más importantes dentro de la estrategia digital,** es mucho más fácil escribir cuando tienes unos objetivos claros y sobre todo cuando tienes una radiografía completa de cómo es el tipo de audiencia que tienes**. Tu mensaje será más directo y persuasivo porque tú mejor que nadie sabes lo que están esperando ellos de ti.
 
 **3. Comparte contenido relevante y útil: **Este aspecto define si tu público te lee o no lee, primero los nuevos algoritmos de redes sociales buscan que lo que compartas con tus seguidores sea útil así se aseguran que cada contenido sea de calidad,** pero mas allá de vencer un algoritmo compartir contenido relevante le da un aspecto mas profesional a tu marca y te acerca mucho mas a tus seguidores**
 
@@ -36,6 +33,6 @@ description: >-
 
 **10. Prueba, prueba y prueba:** Prueba miles de cosas, prueba imágenes diferentes, textos cortos y largos, preguntas, respuestas, emojis, historias, pruébalo todo y pregúntate: **Es relevante, es entretenido, es útil, es interesante, realmente cumple mi objetivo, mi audiencia responde**
 
-![](/img/1_izr1h8b8hwkyyjloaioyig.png)
+![null](/img/1_izr1h8b8hwkyyjloaioyig.png)
 
 **Mi consejo mas importante es que no lo compliques, no hagas una telenovela de cada publicación, recuerda que las redes sociales son simples,** así que hazlo de esa forma, piensa primero en tu audiencia y en lo que quiere, y dales mucho de eso, diviértete mientras creas, y sobretodo objetiviza tu contenido, así no vas a publicar solo por hacerlo si no por cumplir un objetivo claro.
