@@ -2,10 +2,16 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import head from 'lodash/head'
+import last from 'lodash/last'
+import split from 'lodash/split'
+import getObj from "ast-get-object";
 
 import SEO from '../components/SEO'
 import { rhythm, scale } from '../utils/typography'
 import Content, { HTMLContent } from '../components/Content'
+
+import Background from '../assets/background.jpg'
 
 export const Post = ({
   content,
@@ -30,7 +36,7 @@ export const Post = ({
       <SEO
         title={frontmatter.title}
         description={frontmatter.description}
-        image={`${siteUrl}${frontmatter.imagen}`}
+        image={image ? `${siteUrl}${image}` : Background }
         url={`${siteUrl}/${frontmatter.path}`}
         isPost
       />
@@ -86,6 +92,10 @@ export default class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteMetadata = get(this.props, 'data.site.siteMetadata')
     const { previous, next } = this.props.pathContext
+    const ast = post.htmlAst
+    const images = getObj(ast, {"type": "element", "tagName": "img"})
+
+    const image = head(split(last(get(head(images), 'properties.srcSet')), ' '))
 
     return (
       <Post
@@ -95,6 +105,7 @@ export default class BlogPostTemplate extends React.Component {
         next={next}
         content={post.html}
         contentComponent={HTMLContent}
+        image={image}
       />
     )
   }
@@ -111,6 +122,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $slug } }) {
       id
       html
+      htmlAst
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

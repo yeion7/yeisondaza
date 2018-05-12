@@ -8,6 +8,7 @@
     "url": "https://github.com/yeion7/nataliaacevedo/issues"
   },
   "dependencies": {
+    "ast-get-object": "^1.1.1",
     "gatsby": "^1.9.250",
     "gatsby-image": "^1.0.51",
     "gatsby-link": "^1.6.39",
