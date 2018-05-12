@@ -32,6 +32,8 @@ class BlogIndex extends React.Component {
           style={{
             backgroundImage: `url(${
               data.background.childImageSharp.sizes.srcWebp
+            }), url(${
+              data.background.childImageSharp.sizes.src
             })`,
           }}
           className="header"
