@@ -155,7 +155,7 @@ export const pageQuery = graphql`
           fields {
             thumbnail {
               childImageSharp {
-                resolutions(width: 360) {
+                resolutions(width: 360, height: 230) {
                   ...GatsbyImageSharpResolutions_withWebp
                 }
               }
