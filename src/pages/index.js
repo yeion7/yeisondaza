@@ -128,7 +128,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     natalia: file(relativePath: { regex: "/natalia.jpg/" }) {
       childImageSharp {
-        resolutions(width: 250, height: 250) {
+        resolutions(width: 250, height: 250, quality: 90) {
           ...GatsbyImageSharpResolutions_withWebp
         }
       }
