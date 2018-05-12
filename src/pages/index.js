@@ -17,6 +17,7 @@ class BlogIndex extends React.Component {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteURL = get(this, 'props.data.site.siteMetadata.siteUrl')
     const posts = get(this, 'props.data.allMarkdownRemark.edges') || []
+    
     return (
       <section>
         <SEO

@@ -56,7 +56,7 @@ const SEO = ({ title, description, image, url, isPost }) => {
       </script>
 
       {/* support webp */}
-      <script type="text/javascript" src="https://unpkg.com/webpjs@0.0.2/webpjs.min.js"></script>
+      {/* <script type="text/javascript" src="https://unpkg.com/webpjs@0.0.2/webpjs.min.js" async></script> */}
 
       {/* Facebook Card tags */}
 
