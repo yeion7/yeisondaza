@@ -27,7 +27,7 @@ Una de las estrategias más potentes que funcionan para las grandes empresas, **
 
 ![lista](/img/1_csahpfdext-eagr2ab22ug.png)
 
-**Realiza un filtro: **Identifica con quienes has tenido una relación y cuantificala en: **Compre un producto de ellos, me suscribí, tuve una conversación, lei un articulo, compre un libro, lo conozco en persona, me eduque con ellos**. Luego clasifique la relación dándole un puntaje de 1 a 5, siendo 5 una buena relación
+**Realiza un filtro:** Identifica con quienes has tenido una relación y cuantificala en: **Compre un producto de ellos, me suscribí, tuve una conversación, lei un articulo, compre un libro, lo conozco en persona, me eduque con ellos**. Luego clasifique la relación dándole un puntaje de 1 a 5, siendo 5 una buena relación
 
 **Haz una elección:** **Escoge la alternativa con clasificación más alta** y con la que sientas que tienes más posibilidades de éxito.
 

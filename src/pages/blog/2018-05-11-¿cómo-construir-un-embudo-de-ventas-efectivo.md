@@ -39,7 +39,7 @@ Vamos a tener en cuenta que mi embudo de ventas va a estar focalizado a vender u
 
 Veamos cada una en detalle
 
-**Exposición: **Aquí definimos qué canales son los que vamos a utilizar para hacer crecer nuestro negocio.
+**Exposición:** Aquí definimos qué canales son los que vamos a utilizar para hacer crecer nuestro negocio.
 
 **Descubrimiento y consideración: **Tener nuestra landing page. todas las estrategias que generamos en la etapa de exposición lleven a esta landing page.
 
