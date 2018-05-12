@@ -55,6 +55,9 @@ const SEO = ({ title, description, image, url, isPost }) => {
         {JSON.stringify(schemaOrgJSONLD)}
       </script>
 
+      {/* support webp */}
+      <script type="text/javascript" src="https://unpkg.com/webpjs@0.0.2/webpjs.min.js"></script>
+
       {/* Facebook Card tags */}
 
       <meta property="og:url" content={url} />
