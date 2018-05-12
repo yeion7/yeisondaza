@@ -5,6 +5,11 @@ doelgerTheme.overrideThemeStyles = () => ({
   '.post > p': {
     fontSize: '21px',
   },
+  '.post .gatsby-resp-image-link': {
+      color: "inherit",
+      textShadow: "none",
+      backgroundImage: "none"
+  },
   'a.gatsby-resp-image-link': {
     boxShadow: 'none',
   },
