@@ -34,7 +34,7 @@ Vamos a entender cual es la segmentación correcta para empezar a entender nuest
 
 **Ocasional:** Es una segmentación totalmente independiente del cliente, no nos importa su género, edad o lugar donde se encuentra, solo momentos o aspectos.
 
-**Cultural: **Es un aspecto referido a un origen de nuestro cliente, regiones, cultura, etc.
+**Cultural:** Es un aspecto referido a un origen de nuestro cliente, regiones, cultura, etc.
 
 **¿Pero cómo aplicamos todo esto?**
 
