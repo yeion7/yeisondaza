@@ -41,10 +41,10 @@ Veamos cada una en detalle
 
 **Exposición:** Aquí definimos qué canales son los que vamos a utilizar para hacer crecer nuestro negocio.
 
-**Descubrimiento y consideración: **Tener nuestra landing page. todas las estrategias que generamos en la etapa de exposición lleven a esta landing page.
+**Descubrimiento y consideración:** Tener nuestra landing page. todas las estrategias que generamos en la etapa de exposición lleven a esta landing page.
 
 **Conversión:** Obtener respuestas del cliente ya sean ventas, registros en email, obtener recomendaciones, etc…
 
-**Relación con el cliente y retención: **Actualizaciones en el contenido/blog. (muy importante que el cliente se sienta guiado y satisfecho con el soporte que le estamos brindando para resolver sus posibles dudas.)
+**Relación con el cliente y retención:** Actualizaciones en el contenido/blog. (muy importante que el cliente se sienta guiado y satisfecho con el soporte que le estamos brindando para resolver sus posibles dudas.)
 
 Es muy importante llevar a cabo este proceso ya que así organizamos nuestros pensamientos y según lo que nos falte podemos tomar acción inmediata para informarnos, **obtener herramientas e implementar soluciones de acuerdo a ese fallo que estamos teniendo.**
