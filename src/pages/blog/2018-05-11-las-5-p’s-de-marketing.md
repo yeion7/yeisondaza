@@ -21,7 +21,7 @@ Las ventajas pueden estar basadas en una o en varias de las 5 p’s de marketing
 
 **El producto**
 
-Será nuestra base y a lo que más queremos evaluar, su calidad: ¿Es mejor que las demás? **¿Es hecho con mejor materia prima? ¿Es hecho a mano? ¿Tiene estándares de calidad elevados? **Si por ejemplo no estamos ofreciendo un producto tangible, si no tal vez una idea o una persona podemos preguntarnos ¿ Es innovadora? ¿Tengo conocimientos extras que me dan ventajas?
+Será nuestra base y a lo que más queremos evaluar, su calidad: ¿Es mejor que las demás? **¿Es hecho con mejor materia prima? ¿Es hecho a mano? ¿Tiene estándares de calidad elevados?** Si por ejemplo no estamos ofreciendo un producto tangible, si no tal vez una idea o una persona podemos preguntarnos ¿ Es innovadora? ¿Tengo conocimientos extras que me dan ventajas?
 
 
 
@@ -45,7 +45,7 @@ Queremos tener una tienda física acompañada de una tienda virtual, o solo una 
 
 **Las personas**
 
-Personalmente una de las características más importantes, u**n buen equipo nos definirá un buen producto, y un buen uso de él. **Tenemos que tomar el mayor provecho de este, formar un equipo con las mejores características dará como resultado un éxito en el proyecto.
+Personalmente una de las características más importantes, **un buen equipo nos definirá un buen producto, y un buen uso de él.** Tenemos que tomar el mayor provecho de este, formar un equipo con las mejores características dará como resultado un éxito en el proyecto.
 
 
 
@@ -53,7 +53,7 @@ La ventaja competitiva resulta de igualar las fortalezas más significativas con
 
 
 
-Todo el proceso de **búsqueda de ventajas y desventajas debe tener en común el encuentro del VALOR, **ser honestos acerca de esto, siendo conscientes de donde estamos frente a nuestra competencia, nos dará los resultados correctos y aplicables.
+Todo el proceso de **búsqueda de ventajas y desventajas debe tener en común el encuentro del VALOR,** ser honestos acerca de esto, siendo conscientes de donde estamos frente a nuestra competencia, nos dará los resultados correctos y aplicables.
 
 
 
