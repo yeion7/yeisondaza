@@ -122,7 +122,10 @@ class BlogIndex extends React.Component {
                     aria-label={title}
                   >
                     <header>
+                      <div style={{display: 'flex', justifyContent: 'space-between'}}>
                       <span className="card-date">{node.frontmatter.date}</span>
+                      <span className="card-date">{node.timeToRead}MIN</span>
+                      </div>
                       <h2 className="card-title">{title}</h2>
                     </header>
                     <section>
@@ -167,6 +170,7 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
+          timeToRead
           fields {
             thumbnail {
               childImageSharp {
