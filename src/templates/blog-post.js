@@ -11,7 +11,7 @@ import SEO from '../components/SEO'
 import { rhythm, scale } from '../utils/typography'
 import Content, { HTMLContent } from '../components/Content'
 
-import Background from '../assets/background.jpg'
+import Background from '../assets/background.png'
 
 export const Post = ({
   content,

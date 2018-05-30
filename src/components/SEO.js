@@ -33,7 +33,7 @@ const SEO = ({ title, description, image, url, isPost }) => {
         '@type': 'BlogPosting',
         url: url,
         name: title,
-        alternateName: `Natalia Acevedo | ${url}`,
+        alternateName: `Yeison Daza | ${url}`,
         headline: title,
         image: {
           '@type': 'ImageObject',
@@ -143,7 +143,7 @@ const SEO = ({ title, description, image, url, isPost }) => {
         href="/favicon-128.png"
         sizes="128x128"
       />
-      <meta name="application-name" content="Natalia Acevedo" />
+      <meta name="application-name" content="Yeison Daza" />
       <meta name="msapplication-TileColor" content="#FF483B" />
       <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
       <meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />

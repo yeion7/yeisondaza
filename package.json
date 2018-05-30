@@ -1,11 +1,11 @@
 {
-  "name": "natalia-acevedo",
+  "name": "yeison-daza",
   "private": true,
-  "description": "Personal site Natalia Acevedo",
+  "description": "Personal site yeison daza",
   "version": "1.0.0",
   "author": "Yeison Daza <jahir045@gmail.com>",
   "bugs": {
-    "url": "https://github.com/yeion7/nataliaacevedo/issues"
+    "url": "https://github.com/yeion7/yeisondaza/issues"
   },
   "dependencies": {
     "ast-get-object": "^1.1.1",
@@ -47,7 +47,7 @@
     "gh-pages": "^1.1.0",
     "prettier": "^1.12.0"
   },
-  "homepage": "https://github.com/yeion7/nataliaacevedo#readme",
+  "homepage": "https://github.com/yeion7/yeisondaza#readme",
   "keywords": [
     "gatsby"
   ],
@@ -55,7 +55,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yeion7/nataliaacevedo.git"
+    "url": "git+https://github.com/yeion7/yeisondaza.git"
   },
   "scripts": {
     "dev": "gatsby develop",

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Natalia Benitez Acevedo',
+    title: 'Yeison Daza',
     author: 'Yeison Daza',
-    description: 'website Natalia Benitez Acevedo.',
-    siteUrl: 'https://nataliaacevedo.com',
+    description: 'website yeison daza',
+    siteUrl: 'https://yeisondaza.com',
   },
   plugins: [
     {
@@ -72,8 +72,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Natalia Acevedo',
-        short_name: 'Natalia',
+        name: 'Yeison Daza',
+        short_name: 'Yeison',
         start_url: '/',
         background_color: '#f7f0eb',
         theme_color: '#a2466c',

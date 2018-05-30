@@ -6,8 +6,7 @@ import get from 'lodash/get'
 import SEO from '../components/SEO'
 import { rhythm } from '../utils/typography'
 
-import BackgroundImage from '../assets/background.jpg'
-import Natalia from '../assets/natalia.jpg'
+import yeison from '../assets/yeison.jpg'
 
 import '../css/index.scss'
 
@@ -23,7 +22,7 @@ class BlogIndex extends React.Component {
         <SEO
           title={siteTitle}
           description="Consultora de marketing"
-          image={Natalia}
+          image={yeison}
           url={siteURL}
           isPost={false}
         />
@@ -41,17 +40,17 @@ class BlogIndex extends React.Component {
           <div className="header-inner">
             <div className="header-content">
               <Img
-                resolutions={data.natalia.childImageSharp.resolutions}
-                alt="Natalia foto"
+                resolutions={data.yeison.childImageSharp.resolutions}
+                alt="Yeison foto"
                 className="header-img"
               />
-              <h1 className="header-title">Natalia Acevedo</h1>
-              <h2 className="header-subtitle">Consultora de marketing</h2>
+              <h1 className="header-title">Yeison Daza</h1>
+              <h2 className="header-subtitle">Frontend Developer</h2>
 
               <div>
                 <a
                   className="no-link"
-                  href="https://www.facebook.com/NataliaAcevedoMKT/ "
+                  href="https://www.facebook.com/yeion7/"
                   target="_blank"
                   aria-label="url fanpage"
                   rel="noopener"
@@ -61,20 +60,38 @@ class BlogIndex extends React.Component {
                 <a
                   target="_blank"
                   className="no-link"
-                  href="https://api.whatsapp.com/send?phone=573156845565"
+                  href="https://twitter.com/yeion7"
                   aria-label="url whatsapp"
                   rel="noopener"
                 >
-                  <i className="icon-whatsapp" />
+                  <i className="icon-twitter" />
                 </a>
                 <a
                   target="_blank"
                   className="no-link"
-                  href="https://meetings.hubspot.com/natalia-benitez-acevedo-1306"
-                  aria-label="url agendar cita"
+                  href="https://www.instagram.com/yeion7/"
+                  aria-label="url whatsapp"
                   rel="noopener"
                 >
-                  <i className="icon-mail" />
+                  <i className="icon-instagram" />
+                </a>
+                <a
+                  target="_blank"
+                  className="no-link"
+                  href="https://www.linkedin.com/in/yeion7/"
+                  aria-label="url whatsapp"
+                  rel="noopener"
+                >
+                  <i className="icon-linkedin" />
+                </a>
+                <a
+                  target="_blank"
+                  className="no-link"
+                  href="https://github.com/yeion7"
+                  aria-label="url whatsapp"
+                  rel="noopener"
+                >
+                  <i className="icon-github" />
                 </a>
               </div>
             </div>
@@ -126,14 +143,14 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query IndexQuery {
-    natalia: file(relativePath: { regex: "/natalia.jpg/" }) {
+    yeison: file(relativePath: { regex: "/yeison.jpg/" }) {
       childImageSharp {
         resolutions(width: 250, height: 250, quality: 90) {
           ...GatsbyImageSharpResolutions_withWebp
         }
       }
     }
-    background: file(relativePath: { regex: "/background.jpg/" }) {
+    background: file(relativePath: { regex: "/background.png/" }) {
       childImageSharp {
         sizes(quality: 100) {
           ...GatsbyImageSharpSizes_withWebp
