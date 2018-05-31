@@ -8,8 +8,7 @@ description: >
   Dos de las partes más importantes de JavaScript, Objectos y Promesas tienen
   nuevas funcionalidades en ES2018, veamos cómo funcionan.
 ---
-## Dos de las partes más importantes de JavaScript, Objetos y Promesas tienen
-nuevas funcionalidades en ES2018, veamos cómo funcionan.
+## Dos de las partes más importantes de JavaScript, Objetos y Promesas tienen nuevas funcionalidades en ES2018, veamos cómo funcionan.
 
 ![](https://cdn-images-1.medium.com/max/1600/0*TfJFeUcEBECh_W5H.)
 <span class="figcaption_hack">Photo by [Emily
@@ -182,9 +181,3 @@ trabajo, para un montón de cosas y situaciones, es importante que las aprendas
 bien. si tienes dudas no dudes en escribirme.
 
 En el próximo post, hablaremos sobre iteración asíncrona.
-
-* [Es2018](https://medium.com/tag/es2018?source=post)
-* [JavaScript](https://medium.com/tag/javascript?source=post)
-* [Webdev](https://medium.com/tag/webdev?source=post)
-* [Web Development](https://medium.com/tag/web-development?source=post)
-* [Js](https://medium.com/tag/js?source=post)
