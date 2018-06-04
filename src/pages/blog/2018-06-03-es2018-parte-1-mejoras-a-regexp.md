@@ -3,7 +3,7 @@ templateKey: blog
 path: es2018-parte-1-mejoras-a-regexp
 imagen: /img/0_xyleo99iefjq_4sz.jpeg
 title: 'ES2018 Parte 1: Mejoras a RegExp'
-date: '2018-06-03T19:10:28-05:00'
+date: '2018-02-19T19:10:28-05:00'
 description: >-
   JavaScript sigue evolucionando como lenguaje y ya se ha definido que
   características se van a añadir este año, veamos en detalle cada una
