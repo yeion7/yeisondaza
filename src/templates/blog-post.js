@@ -10,8 +10,9 @@ import getObj from "ast-get-object";
 import SEO from '../components/SEO'
 import { rhythm, scale } from '../utils/typography'
 import Content, { HTMLContent } from '../components/Content'
-
+import {MiniCard} from '../components/Card'
 import Background from '../assets/background.png'
+
 
 export const Post = ({
   content,
@@ -69,17 +70,13 @@ export const Post = ({
       >
         {previous && (
           <li>
-            <Link to={previous.frontmatter.path} rel="prev">
-              ← {previous.frontmatter.title}
-            </Link>
+            <MiniCard {...previous.frontmatter} />
           </li>
         )}
 
         {next && (
           <li>
-            <Link to={next.frontmatter.path} rel="next">
-              {next.frontmatter.title} →
-            </Link>
+            <MiniCard {...next.frontmatter} />
           </li>
         )}
       </ul>
@@ -92,6 +89,9 @@ export default class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteMetadata = get(this.props, 'data.site.siteMetadata')
     const { previous, next } = this.props.pathContext
+
+    console.log(this.props);
+    
     const ast = post.htmlAst
     const images = getObj(ast, {"type": "element", "tagName": "img"})
 

@@ -21,6 +21,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   frontmatter {
                     title
                     path
+                    date(formatString: "MMMM DD, YYYY")
+                    description
+                    imagen
                   }
                 }
               }

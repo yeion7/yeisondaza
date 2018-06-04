@@ -5,6 +5,7 @@ import get from 'lodash/get'
 
 import SEO from '../components/SEO'
 import { rhythm } from '../utils/typography'
+import Card from '../components/Card'
 
 import yeison from '../assets/yeison.jpg'
 
@@ -102,38 +103,15 @@ class BlogIndex extends React.Component {
           {posts.map(({ node }) => {
             const title = get(node, 'frontmatter.title')
             return (
-              <article className="card" key={node.frontmatter.path}>
-                <Link
-                  to={node.frontmatter.path}
-                  className="card-image-link no-link"
-                  aria-label={title}
-                >
-                  <Img
-                    resolutions={
-                      node.fields.thumbnail.childImageSharp.resolutions
-                    }
-                    className="card-image "
-                  />
-                </Link>
-                <div className="card-content">
-                  <Link
-                    to={node.frontmatter.path}
-                    className="card-content-link"
-                    aria-label={title}
-                  >
-                    <header>
-                      <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                      <span className="card-date">{node.frontmatter.date}</span>
-                      <span className="card-date">{node.timeToRead}MIN</span>
-                      </div>
-                      <h2 className="card-title">{title}</h2>
-                    </header>
-                    <section>
-                      <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                    </section>
-                  </Link>
-                </div>
-              </article>
+              <Card
+                key={node.frontmatter.path}
+                title={title}
+                path={node.frontmatter.path}
+                tumbnail={node.fields.thumbnail.childImageSharp.resolutions} 
+                date={node.frontmatter.date}
+                timeToRead={node.timeToRead}
+                excerpt={node.excerpt}
+              />
             )
           })}
         </main>
