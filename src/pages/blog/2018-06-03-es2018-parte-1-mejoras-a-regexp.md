@@ -8,13 +8,14 @@ description: >-
   JavaScript sigue evolucionando como lenguaje y ya se ha definido que
   características se van a añadir este año, veamos en detalle cada una
 ---
-*JavaScript sigue evolucionando como lenguaje y ya se ha definido que
-características se van a añadir este año, veamos en detalle cada una.*
+_JavaScript sigue evolucionando como lenguaje y ya se ha definido que
+características se van a añadir este año, veamos en detalle cada una._
 
-![](https://cdn-images-1.medium.com/max/1600/0*XYleO99iEFJQ_4SZ.)
+![A woman holding up a clipboard with a calendar in front of her chest](/img/0_xyleo99iefjq_4sz.jpeg)
+
 <span class="figcaption_hack">“A woman holding up a clipboard with a calendar in front of her chest” by [Brooke Lark](https://unsplash.com/@brookelark?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)</span>
 
-> **Nota: Este contenido lo publiqué primero en **[mi newsletter (https://tinyletter.com/yeion7)**, la semana después de publicar el newsletter publico en mi blog, si quieres ser el primero en leer [suscríbete](https://tinyletter.com/yeion7).
+> **Nota: Este contenido lo publiqué primero en **[mi newsletter (https://tinyletter.com/yeion7)\*\*, la semana después de publicar el newsletter publico en mi blog, si quieres ser el primero en leer [suscríbete](https://tinyletter.com/yeion7).
 
 En Enero el [TC39](https://ecma-international.org/memento/TC39.htm) se reunió y
 **se decidió las propuestas que llegarán a stage 4** y por consiguiente **serán
@@ -25,9 +26,9 @@ sería de posts, donde este será el primero
 
 **Parte1: Mejoras a RegExp**
 
-*Parte2: Rest/Spread Object y Promise.finally*
+_Parte2: Rest/Spread Object y Promise.finally_
 
-*Parte3: Iteración asincrona*
+_Parte3: Iteración asincrona_
 
 Sí estas interesado en cuales son todas las propuestas actuales y sus estados
 puedes verlas [acá](https://github.com/tc39/ecma262/blob/master/README.md)
@@ -83,6 +84,7 @@ console.log(pattern.exec('12')) // null
 
 // La palabra pesos debe estar delante, pero no aparece en el resultado
 ```
+
 En ES2018 se a agregado esta funcionalidad pero buscando antes, usando la
 sintaxis `(?<=\ )`esto quiere decir que podemos hacer lo siguiente
 
@@ -116,6 +118,7 @@ En expresiones regulares el `.` va a hacer mach con cualquier carácter, pero si
 
 /Esta.Casa/su.test('Esta\nCasa'); // true
 ```
+
 #### Escape de propiedades unicode (Unicode Property Escapes)
 
 El estándar [unicode](https://unicode-table.com/es/) asigna varias propiedades a cada símbolo, desde ES2018 vamos a poder acceder a estas propiedades dentro de las expresiones regulares, esto va a ser solo posible usando el flag `u`
