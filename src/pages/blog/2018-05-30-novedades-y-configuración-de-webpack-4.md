@@ -9,19 +9,17 @@ description: >-
   versión bastante importante, ya que se ha trabajado bastante en el performance
   y en seguir el concepto de cero configuración #0CJS
 ---
-Este fin de semana se ha **lanzado** **Webpack 4** (nombre clave, *Legato*),
+Este fin de semana se ha **lanzado** **Webpack 4** (nombre clave, _Legato_),
 esta es una versión bastante importante, ya que se ha trabajado bastante en el
 **performance** y en seguir el concepto de **cero configuración** #0CJS
 
-![](https://cdn-images-1.medium.com/max/1600/0*733PcE3vAfDI88jV.)
-<span class="figcaption_hack">“Modern abstract sculpture of metal net structure against white background, San
-Francisco Museum of Modern Art” by [William
-Bout](https://unsplash.com/@williambout?utm_source=medium&utm_medium=referral)
-on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)</span>
+![Modern abstract sculpture of metal net structure against white background, San Francisco Museum of Modern Art](/img/0_733pce3vafdi88jv.jpeg)
+
+“Modern abstract sculpture of metal net structure against white background, San Francisco Museum of Modern Art” by [William Bout](https://unsplash.com/@williambout?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
 
 > Nota: Este contenido lo publiqué primero en[mi newsletter](https://tinyletter.com/yeion7), la semana después de publicar el
-newsletter publico en mi blog, si quieres ser el primero en leer
-**[suscríbete](https://tinyletter.com/yeion7)**.
+> newsletter publico en mi blog, si quieres ser el primero en leer
+> **[suscríbete](https://tinyletter.com/yeion7)**.
 
 Veamos algunas de las novedades más importantes.
 
@@ -29,7 +27,7 @@ Veamos algunas de las novedades más importantes.
 
 * Es mucho **más rápido**,** hasta un 98% **esto debido que el desarrollo de esta versión se centro bastante en el rendimiento.
 * Sí haz trabajado con webpack conoces el montón de configuración debes realizar, esta versión se centra en el concepto de **cero configuración **#0CJS Webpack 4 tiene una funcionalidad llamada mode con dos opciones **development y
-production**, [acá](https://medium.com/webpack/webpack-4-mode-and-optimization-5423a6bc597a) los detalles de cada modo y ahora por defecto en entry point son `src/index.js` y el output en `dist/main.js`
+  production**, [acá](https://medium.com/webpack/webpack-4-mode-and-optimization-5423a6bc597a) los detalles de cada modo y ahora por defecto en entry point son `src/index.js` y el output en `dist/main.js`
 * `CommonsChuckPlugin` ha sido reemplazado, ahora puedes usar la optimización `optimize.splitChucks`
 * WebAssembly ahora es soportado por defecto, puedes importar archivos Rust, C++, C
 
@@ -94,6 +92,7 @@ Primero modifiquemos un poco los scripts
   "build": "webpack --mode production"
 }
 ```
+
 El flag mode va a asignar las optimizaciones para cada entorno.
 
 Para poder usar react debemos añadir babel y el preset `babel-preset-react`
