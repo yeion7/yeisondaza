@@ -10,14 +10,14 @@ description: >
 ---
 ## Dos de las partes más importantes de JavaScript, Objetos y Promesas tienen nuevas funcionalidades en ES2018, veamos cómo funcionan.
 
-![](https://cdn-images-1.medium.com/max/1600/0*TfJFeUcEBECh_W5H.)
-<span class="figcaption_hack">Photo by [Emily
-Marie](https://unsplash.com/@sahuaromedia?utm_source=medium&utm_medium=referral)
-on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)</span>
+![Photo by Emily Marie](/img/0_tfjfeucebech_w5h.jpeg)
+
+Photo by [Emily Marie](https://unsplash.com/@sahuaromedia?utm_source=medium&utm_medium=referral)
+on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
 
 > Nota: Este contenido lo publiqué primero en [mi
 > newsletter](https://tinyletter.com/yeion7), la semana después de publicar el
-newsletter publico en mi blog, si quieres ser el primero en leer [suscríbete](https://tinyletter.com/yeion7).
+> newsletter publico en mi blog, si quieres ser el primero en leer [suscríbete](https://tinyletter.com/yeion7).
 
 En Enero el [TC39](https://ecma-international.org/memento/TC39.htm) se reunió y
 **se decidió las propuestas que llegarán a stage 4** y por consiguiente **serán
@@ -30,7 +30,7 @@ RegExp](https://medium.com/@yeion7/es2018-parte-1-mejoras-a-regexp-dad987c52802)
 
 **Parte2: Rest/Spread Object y Promise.finally**
 
-*Parte3: Iteración asincrona*
+_Parte3: Iteración asincrona_
 
 Sí estas interesado en cuales son todas las propuestas actuales y sus estados
 puedes verlas [acá](https://github.com/tc39/ecma262/blob/master/README.md)
@@ -147,7 +147,7 @@ objetos, hay un par de detalles de la implementación que quisiera nombrar.
 
 * Todos los objetos creados van a estar vinculados a `Object.prototype`
 * Para obtener los valores de los objetos fuente se utilizan los
-[getters](https://medium.com/entendiendo-javascript/entendiendo-getters-y-setters-en-javascript-f0eeb5d6fe06) de las propiedades
+  [getters](https://medium.com/entendiendo-javascript/entendiendo-getters-y-setters-en-javascript-f0eeb5d6fe06) de las propiedades
 * Para definir las propiedades en el nuevo objeto se utilizan solo los valores, no los [setters](https://medium.com/entendiendo-javascript/entendiendo-getters-y-setters-en-javascript-f0eeb5d6fe06)
 * Spread operator no copia los atributos de cada propiedad del objeto.
 
@@ -172,6 +172,7 @@ fetch('...')
   .catch(e => this.setState({error: true, message: e}))
   .finally(() => this.setState({loading: false}))
 ```
+
 Su funcionalidad es básicamente la misma al finally usada en código asincrono.
 
 #### Palabras finales
