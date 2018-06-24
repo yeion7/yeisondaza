@@ -1,6 +1,4 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 import head from 'lodash/head'
 import last from 'lodash/last'
@@ -59,27 +57,29 @@ export const Post = ({
         }}
       />
 
-      <ul
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'space-between',
-          listStyle: 'none',
-          padding: 0,
-        }}
-      >
-        {previous && (
-          <li>
-            <MiniCard {...previous.frontmatter} />
-          </li>
-        )}
+      <VisibilitySensor>
+        <ul
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            listStyle: 'none',
+            padding: 0,
+          }}
+        >
+          {previous && (
+            <li>
+              <MiniCard {...previous.frontmatter} />
+            </li>
+          )}
 
-        {next && (
-          <li>
-            <MiniCard {...next.frontmatter} />
-          </li>
-        )}
-      </ul>
+          {next && (
+            <li>
+              <MiniCard {...next.frontmatter} />
+            </li>
+          )}
+        </ul>
+      </VisibilitySensor>
     </div>
   )
 }

@@ -1,11 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import get from 'lodash/get'
 import VisibilitySensor from 'react-visibility-sensor'
 
 import SEO from '../components/SEO'
-import { rhythm } from '../utils/typography'
 import Card from '../components/Card'
 
 import yeison from '../assets/yeison.jpg'
@@ -33,7 +31,7 @@ class BlogIndex extends React.Component {
           style={{
             backgroundImage: `url(${
               data.background.childImageSharp.sizes.srcWebp
-            }), url(${data.background.childImageSharp.sizes.src})`,
+            })`,
           }}
           className="header"
         >

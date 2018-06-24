@@ -48,19 +48,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-118864279-1',
+        trackingId: 'UA-121350932-1',
       },
     },
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
-        pixelId: '1532181616895324',
+        pixelId: '343823819355431',
       },
     },
     {
       resolve: `gatsby-plugin-facebook-analytics`,
       options: {
-        appId: '1532181616895324',
+        appId: '343823819355431',
       },
     },
     'gatsby-plugin-catch-links',
@@ -72,11 +72,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Yeison Daza',
+        name: 'YeisonDaza',
         short_name: 'Yeison',
         start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#a2466c',
+        background_color: '#DE6262',
+        theme_color: '#DE6262',
         display: 'minimal-ui',
       },
     },
@@ -86,7 +86,7 @@ module.exports = {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
-        omitGoogleFont: true
+        omitGoogleFont: true,
       },
     },
     {
