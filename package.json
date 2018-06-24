@@ -39,6 +39,7 @@
     "netlify-cms": "^1.7.0",
     "prismjs": "^1.14.0",
     "react-helmet": "^5.2.0",
+    "react-visibility-sensor": "^3.11.0",
     "subfont": "^3.3.0",
     "typography-theme-doelger": "^0.15.11"
   },

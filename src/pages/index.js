@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import get from 'lodash/get'
+import VisibilitySensor from 'react-visibility-sensor'
 
 import SEO from '../components/SEO'
 import { rhythm } from '../utils/typography'
@@ -17,7 +18,7 @@ class BlogIndex extends React.Component {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteURL = get(this, 'props.data.site.siteMetadata.siteUrl')
     const posts = get(this, 'props.data.allMarkdownRemark.edges') || []
-    
+
     return (
       <section>
         <SEO
@@ -32,19 +33,19 @@ class BlogIndex extends React.Component {
           style={{
             backgroundImage: `url(${
               data.background.childImageSharp.sizes.srcWebp
-            }), url(${
-              data.background.childImageSharp.sizes.src
-            })`,
+            }), url(${data.background.childImageSharp.sizes.src})`,
           }}
           className="header"
         >
           <div className="header-inner">
             <div className="header-content">
-              <Img
-                resolutions={data.yeison.childImageSharp.resolutions}
-                alt="Yeison foto"
-                className="header-img"
-              />
+              <VisibilitySensor>
+                <Img
+                  resolutions={data.yeison.childImageSharp.resolutions}
+                  alt="Yeison foto"
+                  className="header-img"
+                />
+              </VisibilitySensor>
               <h1 className="header-title">Yeison Daza</h1>
               <h2 className="header-subtitle">Frontend Developer</h2>
 
@@ -107,7 +108,7 @@ class BlogIndex extends React.Component {
                 key={node.frontmatter.path}
                 title={title}
                 path={node.frontmatter.path}
-                tumbnail={node.fields.thumbnail.childImageSharp.resolutions} 
+                tumbnail={node.fields.thumbnail.childImageSharp.resolutions}
                 date={node.frontmatter.date}
                 timeToRead={node.timeToRead}
                 excerpt={node.excerpt}

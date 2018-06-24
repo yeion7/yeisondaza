@@ -5,14 +5,14 @@ import get from 'lodash/get'
 import head from 'lodash/head'
 import last from 'lodash/last'
 import split from 'lodash/split'
-import getObj from "ast-get-object";
+import getObj from 'ast-get-object'
+import VisibilitySensor from 'react-visibility-sensor'
 
 import SEO from '../components/SEO'
 import { rhythm, scale } from '../utils/typography'
 import Content, { HTMLContent } from '../components/Content'
-import {MiniCard} from '../components/Card'
+import { MiniCard } from '../components/Card'
 import Background from '../assets/background.png'
-
 
 export const Post = ({
   content,
@@ -37,7 +37,7 @@ export const Post = ({
       <SEO
         title={frontmatter.title}
         description={frontmatter.description}
-        image={image ? `${siteUrl}${image}` : Background }
+        image={image ? `${siteUrl}${image}` : Background}
         url={`${siteUrl}/${frontmatter.path}`}
         isPost
       />
@@ -90,10 +90,10 @@ export default class BlogPostTemplate extends React.Component {
     const siteMetadata = get(this.props, 'data.site.siteMetadata')
     const { previous, next } = this.props.pathContext
 
-    console.log(this.props);
-    
+    console.log(this.props)
+
     const ast = post.htmlAst
-    const images = getObj(ast, {"type": "element", "tagName": "img"})
+    const images = getObj(ast, { type: 'element', tagName: 'img' })
 
     const image = head(split(last(get(head(images), 'properties.srcSet')), ' '))
 
