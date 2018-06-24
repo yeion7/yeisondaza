@@ -1,7 +1,25 @@
 import React from 'react'
 
-export default class HTML extends React.Component {
+let stylesStr
+if (process.env.NODE_ENV === `production`) {
+  try {
+    stylesStr = require(`!raw-loader!../public/styles.css`)
+  } catch (e) {
+    console.log(e)
+  }
+}
+
+module.exports = class HTML extends React.Component {
   render() {
+    let css
+    if (process.env.NODE_ENV === `production`) {
+      css = (
+        <style
+          id="gatsby-inlined-css"
+          dangerouslySetInnerHTML={{ __html: stylesStr }}
+        />
+      )
+    }
     return (
       <html {...this.props.htmlAttributes}>
         <head>
@@ -10,8 +28,14 @@ export default class HTML extends React.Component {
             href="//fonts.googleapis.com/css?family=Arvo:700|Cabin:400,400i,700"
             as="style"
           />
-          <link rel="preload" href="/static/icomoon.810dfa10.ttf" as="style" />
+          <meta charSet="utf-8" />
+          <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
           {this.props.headComponents}
+          {css}
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
@@ -116,7 +140,9 @@ export default class HTML extends React.Component {
           />
         </head>
         <body {...this.props.bodyAttributes}>
+          {this.props.preBodyComponents}
           <div
+            key={`body`}
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
