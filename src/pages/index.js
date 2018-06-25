@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
       <section>
         <SEO
           title={siteTitle}
-          description="Consultora de marketing"
+          description="FrontEnd Developer"
           image={yeison}
           url={siteURL}
           isPost={false}
