@@ -90,8 +90,6 @@ export default class BlogPostTemplate extends React.Component {
     const siteMetadata = get(this.props, 'data.site.siteMetadata')
     const { previous, next } = this.props.pathContext
 
-    console.log(this.props)
-
     const ast = post.htmlAst
     const images = getObj(ast, { type: 'element', tagName: 'img' })
 

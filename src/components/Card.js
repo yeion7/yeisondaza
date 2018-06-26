@@ -30,7 +30,7 @@ export const MiniCard = ({ path, imagen, date, title }) => {
   const num = Math.floor(Math.random() * (1000 - 1) + 1)
   return (
     <Link
-      className="card"
+      className="card card-small"
       to={path}
       rel="prev"
       style={{ maxWidth: '290px', height: '100%' }}
