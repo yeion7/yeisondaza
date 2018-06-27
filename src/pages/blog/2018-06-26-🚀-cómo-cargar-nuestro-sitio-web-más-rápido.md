@@ -31,19 +31,19 @@ Muchos de estos se pueden lograr de forma bastante sencilla usando la herramient
 
 ## Preload y Prefetch
 
-[Preload](https://www.w3.org/TR/preload/) y [Prefech](https://www.w3.org/TR/resource-hints/#prefetch) son un estándar web que nos permite mejorar el rendimiento de nuestro sitio, tomando el control de cuando se cargan los recursos que son importantes para nuestro sitio
+[Preload](https://www.w3.org/TR/preload/) y [Prefetch](https://www.w3.org/TR/resource-hints/#prefetch) son un estándar web que nos permite mejorar el rendimiento de nuestro sitio, tomando el control de cuando se cargan los recursos que son importantes para nuestro sitio
 
 _Preload_ es como decirle al navegador, oye descarga esto pronto porque el usuario lo va a necesitar de inmediato y el navegador inicia su descarga aún cuanto estar leyendo el HTML.
 
-_Prefech_ es como decirle al navegador, oye descarga esto pero no tiene tanta prioridad, de pronto el usuario lo va a necesitar pronto y el navegador decide cuando es el mejor momento para descargarlo. Si el usuario cambia de vista aun así la descarga va a continuar en paralelo.
+_Prefetch_ es como decirle al navegador, oye descarga esto pero no tiene tanta prioridad, de pronto el usuario lo va a necesitar pronto y el navegador decide cuando es el mejor momento para descargarlo. Si el usuario cambia de vista aun así la descarga va a continuar en paralelo.
 
 > Recuerda, es importante que no uses esto para cargar todos los recursos de tu sitio, un gran poder requiere una gran responsabilidad
 
-## Cómo usar preload y prefech
+## Cómo usar preload y prefetch
 
 Para usarlos debes declararlos usando etiquetas `link` tan pronto abras el `head` de tu sitio, debes usar tres atributos principalmente
 
-* `rel` defines si usar preload o prefech
+* `rel` defines si usar preload o prefetch
 * `href` la ruta del recurso
 * `as` el tipo del recurso
 
@@ -74,12 +74,12 @@ En la segundo usando preload para los estilos, más o menos a los 300ms ya podem
 
 Este ejemplo solo es usando preload en un archivo css, imagina cuantos assets tiene tu proyecto que están bloqueando la carga de tu sitio.
 
-Ahora imagina que alguien entra al home del sitio y sabes que es probable que entre a `/about`, y estás usando code splitting, podrías ir haciendo prefech de el script necesario para esa página
+Ahora imagina que alguien entra al home del sitio y sabes que es probable que entre a `/about`, y estás usando code splitting, podrías ir haciendo prefetch de el script necesario para esa página
 
 ```html
 <html>
   <head>
-    <link rel="prefech" href="about.js" as="script">
+    <link rel="prefetch" href="about.js" as="script">
   </head>
   <body>
     <h1>Home</h1>
@@ -110,7 +110,7 @@ Una vez el usuario entre al home, el navegador en cierto punto va a descargar el
 * Sí usas preload en recursos que no van a ser usados inmediatamente vas a tener un warning en la consola
 * Si un recurso ya está cacheado (service workers por ejemplo), no debería volverse a descargar
 * Puedes ver la prioridad de cada recurso usando el tab network en las herramientas de desarrollo
-* Sí los recursos a los que haces preload/prefech tienen headers de caché validos son guardados en caché
+* Sí los recursos a los que haces preload/prefetch tienen headers de caché validos son guardados en caché
 * Cuando cargas fuentes debes usar el atributo `crossorigin` así no los cargues desde el mismo dominio
 * No intentes cargar absolutamente todo usando está técnica
 
@@ -160,7 +160,7 @@ y cuando deseemos usarlo, simplemente los injectas en el sitio.
 
 ## Preload elementos de acuerdo a la resolución
 
-Ya que preload/prefech usan el tag link, podemos usar el atributo media para personalizar cuando precargamos assets
+Ya que preload/prefetch usan el tag link, podemos usar el atributo media para personalizar cuando precargamos assets
 
 ```html
 <link rel="preload" as="image" href="imagen.png" media="(max-width: 600px)">
@@ -168,7 +168,7 @@ Ya que preload/prefech usan el tag link, podemos usar el atributo media para per
 
 ## Con webpack
 
-Si usas [webpack](https://webpack.js.org/) para construir tu proyecto también puedes usar esta técnica, basta con usar el plugin [preload-webpack-plugin](https://github.com/GoogleChromeLabs/preload-webpack-plugin) y desde la versión `4.6.0`, se añadió soporte para cuando uses code sppliting puedas usar un _magic commet_ para definir si quieres usar preload o prefech en ese chunk 
+Si usas [webpack](https://webpack.js.org/) para construir tu proyecto también puedes usar esta técnica, basta con usar el plugin [preload-webpack-plugin](https://github.com/GoogleChromeLabs/preload-webpack-plugin) y desde la versión `4.6.0`, se añadió soporte para cuando uses code sppliting puedas usar un _magic commet_ para definir si quieres usar preload o prefetch en ese chunk 
 
 ```js
 import(
