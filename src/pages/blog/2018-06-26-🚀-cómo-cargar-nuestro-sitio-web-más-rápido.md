@@ -122,7 +122,7 @@ Uno de los assets más críticos son las fuentes, y son las que muchas veces blo
 <head>
   <link 
     rel="preload" 
-    href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" as="font" 
+    href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700"
     as="font"
     crossorigin
   >
@@ -130,7 +130,7 @@ Uno de los assets más críticos son las fuentes, y son las que muchas veces blo
 </head>
 ```
 
-> > Recuerda también usar `font-display: swap` así el navegador va a mostrar el contenido con la fuente fallback y tan pronto cargue cambiar la fuente, sin bloquear el render
+> Recuerda también usar `font-display: swap` así el navegador va a mostrar el contenido con la fuente fallback y tan pronto cargue cambiar la fuente, sin bloquear el render
 
 Ahora técnicamente aún estamos bloqueando el render de la página, con los assets críticos no tenemos opción debemos cargarlos, con preload vamos a lograr que se descarguen lo más pronto posible, pero con assets que no son críticos podemos cargarlos lazy, sin necesidad de ejecutarlos de inmediato
 
