@@ -11,7 +11,7 @@ description: >-
 ---
 Como desarrolladores frontend nuestra meta es brindar mejores experiencias a los usuarios, una de las cosas principales parar lograr esto es hacer que nuestras aplicaciones carguen lo antes posible. 
 
-Existen varios [estudios con casos reales](https://searchengineland.com/mobile-speed-case-studies-push-for-faster-page-loads-295331) de empresas que optimizando la carga de su sitio han logrado vender más, tener más visitas, en general impactando la rentabilidad del negocio, así que esto se vuelve un tema critico.
+Existen varios [estudios con casos reales](https://searchengineland.com/mobile-speed-case-studies-push-for-faster-page-loads-295331) de empresas que optimizando la carga de su sitio han logrado vender más, tener más visitas, en general impactando la rentabilidad del negocio, así que esto se vuelve un tema crítico.
 
 ![Imagen de unsplash por Chris Liverani](/img/photo-1517026575980-3e1e2dedeab4.jpeg)
 
@@ -20,34 +20,34 @@ Para lograr que nuestro sitio sea lo más rápido posible podemos usar una gran 
 * Minificar nuestro código
 * Comprimir nuestros assets (gzip, brotil, etc)
 * Cargar solo el código que sea necesario
-* Cargar las imagenes optimizadas, en el tamaño necesario, etc
-* Usar lazy loading para cargar imagenes, evitando cargar imagenes que no ve el cliente.
+* Cargar las imágenes optimizadas, en el tamaño necesario, etc
+* Usar lazy loading para cargar imágenes, evitando cargar imágenes que no ve el cliente.
 * Usar CDNs que estén lo más cerca posible a nuestros clientes
 * Cachear correctamente nuestros assets para no descargarlos múltiples veces
 * Transpilar solo el código necesario de JS para los navegadores que queremos soportar
 * No bloquear el render de la página con la carga de assets
 
-Muchos de estos se pueden lograr de forma bastante sencilla usando la herramienta adecuada, pero hoy quiero hablarles de una que a mi parecer no es tan usada y puede tener el mayor impacto con pocas lineas de código.
+Muchos de estos se pueden lograr de forma bastante sencilla usando la herramienta adecuada, pero hoy quiero hablarles de una que a mi parecer no es tan usada y puede tener el mayor impacto con pocas líneas de código.
 
 ## Preload y Prefetch
 
-[Preload](https://www.w3.org/TR/preload/) y [Prefetch](https://www.w3.org/TR/resource-hints/#prefetch) son un estándar web que nos permite mejorar el rendimiento de nuestro sitio, tomando el control de cuando se cargan los recursos que son importantes para nuestro sitio
+[Preload](https://www.w3.org/TR/preload/) y [Prefetch](https://www.w3.org/TR/resource-hints/#prefetch) son un estándar web que nos permite mejorar el rendimiento de nuestro sitio, tomando el control de cuando se cargan los recursos que son importantes para nosotros.
 
-_Preload_ es como decirle al navegador, oye descarga esto pronto porque el usuario lo va a necesitar de inmediato y el navegador inicia su descarga aún cuanto estar leyendo el HTML.
+_Preload_ es como decirle al navegador, "oye descarga esto pronto porque el usuario lo va a necesitar de inmediato" y el navegador inicia su descarga aún cuanto este leyendo el HTML.
 
-_Prefetch_ es como decirle al navegador, oye descarga esto pero no tiene tanta prioridad, de pronto el usuario lo va a necesitar pronto y el navegador decide cuando es el mejor momento para descargarlo. Si el usuario cambia de vista aun así la descarga va a continuar en paralelo.
+_Prefetch_ es como decirle al navegador, "oye descarga esto pero no tiene tanta prioridad", de pronto el usuario lo va a necesitar el recurso en algún punto y el navegador decide cuando es el mejor momento para descargarlo. Si el usuario cambia de vista aún así la descarga va a continuar en paralelo.
 
-> Recuerda, es importante que no uses esto para cargar todos los recursos de tu sitio, un gran poder requiere una gran responsabilidad
+> Recuerda, es importante que no uses esto para cargar todos los recursos de tu sitio. Un gran poder requiere una gran responsabilidad.
 
-## Cómo usar preload y prefetch
+## ¿Cómo usar preload y prefetch?
 
-Para usarlos debes declararlos usando etiquetas `link` tan pronto abras el `head` de tu sitio, debes usar tres atributos principalmente
+Para usarlos debes declararlos usando etiquetas `link` tan pronto abras el `head` de tu sitio. Debes usar tres atributos principalmente:
 
 * `rel` defines si usar preload o prefetch
 * `href` la ruta del recurso
 * `as` el tipo del recurso
 
-Así si por ejemplo quiere hacer preload de los estilos de tu sitio debes hacer
+Así, por ejemplo quiere hacer preload de los estilos de tu sitio debes hacer:
 
 ```html
 <html>
@@ -74,7 +74,7 @@ En la segundo usando preload para los estilos, más o menos a los 300ms ya podem
 
 Este ejemplo solo es usando preload en un archivo css, imagina cuantos assets tiene tu proyecto que están bloqueando la carga de tu sitio.
 
-Ahora imagina que alguien entra al home del sitio y sabes que es probable que entre a `/about`, y estás usando code splitting, podrías ir haciendo prefetch de el script necesario para esa página
+Ahora imagina que alguien entra al home del sitio y sabes que es probable que entre a `/about`, y estás usando code splitting, podrías ir haciendo prefetch del script necesario para esa página.
 
 ```html
 <html>
@@ -90,7 +90,7 @@ Ahora imagina que alguien entra al home del sitio y sabes que es probable que en
 
 Una vez el usuario entre al home, el navegador en cierto punto va a descargar el script necesario para `/about`, así la carga de esa página va a ser mucho más rápida.
 
-## Qué tipos de contenido podemos usar
+## ¿Qué tipos de contenido podemos usar?
 
 * audio
 * document
@@ -107,12 +107,12 @@ Una vez el usuario entre al home, el navegador en cierto punto va a descargar el
 
 ## Cosas a tener en cuenta
 
-* Sí usas preload en recursos que no van a ser usados inmediatamente vas a tener un warning en la consola
-* Si un recurso ya está cacheado (service workers por ejemplo), no debería volverse a descargar
-* Puedes ver la prioridad de cada recurso usando el tab network en las herramientas de desarrollo
-* Sí los recursos a los que haces preload/prefetch tienen headers de caché validos son guardados en caché
-* Cuando cargas fuentes debes usar el atributo `crossorigin` así no los cargues desde el mismo dominio
-* No intentes cargar absolutamente todo usando está técnica
+* Si usas preload en recursos que no van a ser usados inmediatamente vas a tener un warning en la consola.
+* Si un recurso ya está cacheado (service workers por ejemplo), no debería volverse a descargar.
+* Puedes ver la prioridad de cada recurso usando el tab network en las herramientas de desarrollo.
+* Si los recursos a los que haces preload/prefetch tienen headers de caché válidos son guardados en caché.
+* Cuando cargas fuentes debes usar el atributo `crossorigin`, así los cargues desde el mismo dominio.
+* No intentes cargar absolutamente todo usando esta técnica.
 
 ## Fuentes
 
@@ -146,7 +146,7 @@ Ahora técnicamente aún estamos bloqueando el render de la página, con los ass
 </body>
 ```
 
-y cuando deseemos usarlo, simplemente los injectas en el sitio.
+y cuando deseemos usarlo, simplemente los inyectas en el sitio.
 
 ```html
 <body>
