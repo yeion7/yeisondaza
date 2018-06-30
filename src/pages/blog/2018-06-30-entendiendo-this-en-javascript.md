@@ -2,7 +2,7 @@
 templateKey: blog
 path: entendiendo-this-javascript
 imagen: /img/1_l2mcqoyqtya0kqqyfhopha.png
-title: Entendiendo This en JavaScript
+title: Entendiendo this en JavaScript
 date: '2016-02-09T16:18:20-05:00'
 description: >
   This es un keyword de JavaScript que tiene un comportamiento muy diferente a
