@@ -1,6 +1,6 @@
 ---
 templateKey: blog
-path: Herencia funcional en JavaScript
+path: herencia-funcional-en-javascript
 imagen: /img/1_8txkzzlvlg1uw-xomwntaq.png
 title: Herencia funcional en JavaScript
 date: '2016-06-07T12:31:44-05:00'
