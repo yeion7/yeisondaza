@@ -1,10 +1,10 @@
 ---
 templateKey: blog
-path: entendiendo-la-asignación-por-destructuring-en-javascript
+path: entendiendo-la-asignacion-por-destructuring-en-javascript
 imagen: /img/1_a0a1oe9ydl4dppofmz0iug.png
 title: Entendiendo la asignación por destructuring en JavaScript
 date: '2016-02-21T16:33:13-05:00'
-description: >+
+description: >
   Destructuring es una de las más poderosas características añadidas al lenguaje
   en ES2015, una característica que nos facilita las cosas y hace nuestro código
   más legible.
