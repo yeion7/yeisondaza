@@ -3,7 +3,7 @@ templateKey: blog
 path: entendiendo-getters-y-setters-en-javascript
 imagen: /img/1_duizv4vxnqnu3l_ttf5aia.png
 title: Entendiendo Getters y Setters en JavaScript
-date: '2015-04-15T17:28:23-05:00'
+date: '2016-04-15T17:28:23-05:00'
 description: >-
   Desde ES2015, tenemos la posibilidad de usar getters y setters para definir
   propiedades en nuestros objetos. En este post entenderemos como funcionan.
