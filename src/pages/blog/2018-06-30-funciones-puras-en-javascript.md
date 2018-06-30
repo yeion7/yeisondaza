@@ -15,7 +15,7 @@ Uno de los principios más útiles para programar es KISS (Keep It Simple, Stupi
 
 ![Banner posts](/img/1_fn1am1qhkst_kga80k8y_q.png)
 
-En JavaScript las funciones son una parte fundamental del lenguaje, ellas nos permiten c osas como [currying](/currying-en-javascript-funciones-con-superpoderes), [herencia funcional](/herencia-funcional-en-javascript-a3218816cc56), [closures](/entendiendo-closures-en-javascript-8fb9a284964e), [funciones de alto orden](/funciones-de-alto-orden-en-javascript-42d04769d9b5), etc.
+En JavaScript las funciones son una parte fundamental del lenguaje, ellas nos permiten c osas como [currying](/currying-en-javascript-funciones-con-superpoderes), [herencia funcional](/herencia-funcional-en-javascript), [closures](/entendiendo-closures-en-javascript), [funciones de alto orden](/funciones-de-alto-orden-en-javascript), etc.
 
 >  “Funciones son cruciales en computación y matemática, ayudan a procesar datos de maneras útiles.”
 
@@ -42,7 +42,7 @@ sumadorA(2); //2
 sumadorA(2); //4
 ```
 
-Tenemos una función [currificada](/currying-en-javascript-funciones-con-superpoderes-1c8760c728a) que recibe un número (por defecto 0)y retorna una función que recibe otro numero y retorna la suma.
+Tenemos una función [currificada](/currying-en-javascript-funciones-con-superpoderes) que recibe un número (por defecto 0)y retorna una función que recibe otro numero y retorna la suma.
 
 _¿Cual es el problema de esta función?_
 
