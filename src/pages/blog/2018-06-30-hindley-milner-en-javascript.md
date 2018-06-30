@@ -14,7 +14,7 @@ Una parte fundamental de programar es la manera en que documentamos el código q
 
 ![Banner post](/img/1_ohnagdokat5d0vsda-vjfg.jpeg)
 
-La semana pasada vimos como [componer funciones en JavaScript](https://yeisondaza.com/componiendo-funciones-en-javascript), como dijimos después de crear un función nos interesa cómo se relacionan con otras funciones y no tanto su implementación.
+La semana pasada vimos como [componer funciones en JavaScript](/componiendo-funciones-en-javascript), como dijimos después de crear un función nos interesa cómo se relacionan con otras funciones y no tanto su implementación.
 
 Para entender esta relación debemos pensar en los tipos de datos que recibe y retornan las funciones.
 
@@ -26,7 +26,7 @@ Hoy veremos una manera de documentar las funciones siguiendo un sistema utilizad
 
 ## Hindley-Milner
 
-Este es un sistema de tipos creado para el [calculo Lambda](https://yeisondaza.com/calculo-lambda-en-javascript), es usado en lenguajes funcionales, principalmente [Haskell](http://dev.stephendiehl.com/fun/006_hindley_milner.html).
+Este es un sistema de tipos creado para el [calculo Lambda](/calculo-lambda-en-javascript), es usado en lenguajes funcionales, principalmente [Haskell](http://dev.stephendiehl.com/fun/006_hindley_milner.html).
 
 Veamos como podemos documentar nuestras funciones usando este sistema.
 
@@ -136,7 +136,7 @@ En la función id esta puede recibir valores de cualquier tipo, asi que podemos 
 
 ### Funciones currificadas
 
-Como ya sabemos podemos escribir [funciones currificadas](https://yeisondaza.com/currying-en-javascript-funciones-con-superpoderes), así que podemos documentar estas de la siguiente forma.
+Como ya sabemos podemos escribir [funciones currificadas](/currying-en-javascript-funciones-con-superpoderes), así que podemos documentar estas de la siguiente forma.
 
 ```
 // add :: Int → Int → Int 
