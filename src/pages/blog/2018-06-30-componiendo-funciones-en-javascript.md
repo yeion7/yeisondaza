@@ -15,7 +15,7 @@ Para crear aplicaciones que resuelvan problemas complejos, debemos dividir estos
 
 ![Banner posts](/img/1_jww9p6ixikhs8bg0-nsvqw.jpeg)
 
-Desde que se inventaron las sub-rutinas o la programación estructural usamos este concepto de crear bloques de código que podamos componer, en programación orientada a objetos todo es [componer objetos](https://yeisondaza.com/entendiendo-la-composición-en-javascript).
+Desde que se inventaron las sub-rutinas o la programación estructural usamos este concepto de crear bloques de código que podamos componer, en programación orientada a objetos todo es [componer objetos](/entendiendo-la-composición-en-javascript).
 
 > Composición es la esencia de la programación.
 
@@ -27,7 +27,7 @@ Componer funciones se basa en combinar funciones simples para construir funcione
 
 > “La composición de funciones es el acto de dirigir el resultado de una función, a la entrada de otra, creando una nueva función” [Haskell Wiki](https://wiki.haskell.org/Function_composition)
 
-JavaScript al implementar [funciones de alto orden](https://yeisondaza.com/funciones-de-alto-orden-en-javascript) y [closures](https://yeisondaza.com/entendiendo-closures-en-javascript) hace que esto sea bastante sencillo de lograr, podemos escribir esto como:
+JavaScript al implementar [funciones de alto orden](/funciones-de-alto-orden-en-javascript) y [closures](/entendiendo-closures-en-javascript) hace que esto sea bastante sencillo de lograr, podemos escribir esto como:
 
 ```
 const compose = (f, g) => (x) => f(g(x));
@@ -58,8 +58,8 @@ const incomesAverage = compose(average, map(prop('incomes')));
 incomesAverage(USERS) // 8333.333
 ```
 
-* Las funciones que reciben más de un argumento deben estar [currificadas](https://yeisondaza.com/currying-en-javascript-funciones-con-superpoderes).
-* Es una buena idea separar las [funciones puras](https://yeisondaza.com/funciones-puras-en-javascript-crea-funciones-libres) de las que tienen efectos secundarios.
+* Las funciones que reciben más de un argumento deben estar [currificadas](/currying-en-javascript-funciones-con-superpoderes).
+* Es una buena idea separar las [funciones puras](/funciones-puras-en-javascript-crea-funciones-libres) de las que tienen efectos secundarios.
 
 ### Caso 2
 
