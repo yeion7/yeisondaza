@@ -4,13 +4,13 @@ path: por-que-deberias-apostar-tu-futuro-profesional-a-javascript
 imagen: /img/photo-1450500392544-c2cb0fd6e3b8.jpeg
 title: ¿Por qué deberías apostar tu futuro profesional a JavaScript?
 date: '2016-07-06T11:34:28-05:00'
-description: >+
+description: >
   Si quieres aprender a programar o aprender un nuevo lenguaje de programación,
   este es un buen momento para aprender JavaScript, déjame contarte por qué.
 ---
 Si quieres aprender a programar o aprender un nuevo lenguaje de programación, este es un buen momento para aprender JavaScript, déjame contarte por qué.
 
-> Este contenido lo publiqué primero en [mi newsletter](https://tinyletter.com/yeion7), la semana después de publicar el newsletter publico en mi blog, si quieres ser el primero en leer [suscríbete](http://suscribete).
+> Este contenido lo publiqué primero en [mi newsletter](https://tinyletter.com/yeion7), la semana después de publicar el newsletter publico en mi blog, si quieres ser el primero en leer suscríbete.
 
 ![foto de Pete Nowicki en unsplash](/img/photo-1450500392544-c2cb0fd6e3b8.jpeg)
 
