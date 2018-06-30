@@ -9,16 +9,16 @@ const Card = ({ path, tumbnail, date, timeToRead, excerpt, title }) => {
         <Img resolutions={tumbnail} className="card-image " />
       </Link>
       <div className="card-content">
-        <Link to={path} className="card-content-link" aria-label={title}>
+        <Link to={path} className="card-content-link no-link" aria-label={title}>
           <header>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <span className="card-date">{date}</span>
               <span className="card-date">{timeToRead}MIN</span>
             </div>
-            <h2 className="card-title">{title}</h2>
+            <h3 className="card-title">{title}</h3>
           </header>
           <section>
-            <p dangerouslySetInnerHTML={{ __html: excerpt }} />
+            <p style={{color: "#666"}} dangerouslySetInnerHTML={{ __html: excerpt }} />
           </section>
         </Link>
       </div>

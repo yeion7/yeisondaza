@@ -65,6 +65,7 @@ export const Post = ({
             justifyContent: 'center',
             listStyle: 'none',
             padding: 0,
+            margin: 0
           }}
         >
           {previous && (

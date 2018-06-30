@@ -62,11 +62,14 @@
   margin: 0 20px 40px;
   background: #fff 50%;
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
     1px 3px 8px rgba(39, 44, 49, 0.03);
   transition: all 0.5s ease;
   
+  &:hover {
+    box-shadow: 3px 3px 9px rgba(222,98,98, 0.5),
+  }
   @media (min-width: 1333px) {
     max-width: 360px;
   }
@@ -79,7 +82,7 @@
   &-image-link {
     display: block;
     overflow: hidden;
-    border-radius: 5px 5px 0 0;
+    border-radius: 20px 20px 0 0;
   }
 
   &-image {
