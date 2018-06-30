@@ -3,7 +3,7 @@ templateKey: blog
 path: novedades-de-html-5-2
 imagen: /img/1_nlqpttam8dbgl4pabmje_g.jpeg
 title: Novedades de HTML 5.2
-date: '2018-06-30T09:23:04-05:00'
+date: '2018-01-15T09:23:04-05:00'
 description: >-
   Los estándares que definen como deben ser las tecnologías más importantes de
   la web siguen creciendo y hace unos meses la versión 5.2 de HTML se volvió la
