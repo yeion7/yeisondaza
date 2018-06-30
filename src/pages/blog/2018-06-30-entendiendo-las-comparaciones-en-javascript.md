@@ -3,8 +3,8 @@ templateKey: blog
 path: entendiendo-las-comparaciones-en-javascript
 imagen: /img/1_wu_tumm-amzxxkjj0mqvmg.png
 title: Entendiendo las comparaciones en JavaScript
-date: '2018-06-30T18:00:25-05:00'
-description: >+
+date: '2016-05-14T18:00:25-05:00'
+description: >
   Uno de los procesos que todos realizamos mientras programamos cada día es
   comparar valores, si estos son iguales, diferentes, mayores, menores, etc,
   para poder realizar acciones con estos.
