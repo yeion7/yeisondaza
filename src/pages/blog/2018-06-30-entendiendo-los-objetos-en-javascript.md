@@ -3,7 +3,7 @@ templateKey: blog
 path: entendiendo-los-objetos-en-javascript
 imagen: /img/1_rim5xncbxed_oszdsoknnq.png
 title: Entendiendo los Objetos en JavaScript
-date: '2018-06-30T17:14:31-05:00'
+date: '2016-04-30T17:14:31-05:00'
 description: >-
   Los objetos son, una de las características menos entendidas en JavaScript,
   dado que su implementación tiene algunas diferencias importantes con muchos
