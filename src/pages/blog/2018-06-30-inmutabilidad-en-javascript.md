@@ -3,7 +3,7 @@ templateKey: blog
 path: immutabilidad-en-javascript
 imagen: /img/1_1w8jk_necgn3arujgiq8rw.png
 title: Inmutabilidad en JavaScript
-date: '2018-06-30T11:46:33-05:00'
+date: '2016-06-30T11:46:33-05:00'
 description: >-
   Una de las características más importantes de los lenguajes funcionales es que
   sus estructuras de datos son inmutables, las cuales muestran reducir la
