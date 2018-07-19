@@ -13,9 +13,9 @@ Lo primero que necesitamos para comenzar a implementar pruebas en cualquier proy
 
 ![Imagen persona en el computador,  NordWood Themes @nordwood  NordWood Themes](/img/photo-1516542076529-1ea3854896f2.jpeg)
 
-## ¿Por qué jests?
+## ¿Porqué jests?
 
-Jest es una librería que nos permite escribir y ejecutar tests, es desarrollada por Facebook y usada por plataformas como \[airbnb](https://www.airbnb.com], [twitter](https://twitter.com/), [spotify](https://www.spotify.com/), [resuelve](https://resuelvetudeuda.com/), etc.
+Jest es una librería que nos permite escribir y ejecutar tests, es desarrollada por Facebook y usada por plataformas como [airbnb](https://www.airbnb.com], [twitter](https://twitter.com/), [spotify](https://www.spotify.com/), [resuelve](https://resuelvetudeuda.com/), etc.
 
 Algunas de las características que creo hacen a jest la mejor opción hoy, son:
 
