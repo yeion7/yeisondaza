@@ -13,7 +13,7 @@ Lo primero que necesitamos para comenzar a implementar pruebas en cualquier proy
 
 ![Imagen persona en el computador,  NordWood Themes @nordwood  NordWood Themes](/img/photo-1516542076529-1ea3854896f2.jpeg)
 
-## ¿Porqué jests?
+## ¿Porqué jest?
 
 Jest es una librería que nos permite escribir y ejecutar tests, es desarrollada por Facebook y usada por plataformas como [airbnb](https://www.airbnb.com), [twitter](https://twitter.com/), [spotify](https://www.spotify.com/), [resuelve](https://resuelvetudeuda.com/), etc.
 
@@ -174,7 +174,7 @@ Cómo ves también podríamos configurar correr runners personalizados, en este 
 
 ## Importar CSS en JS
 
-Cuando en nuestros archivos de JS importamos archivos CSS, ya que usamos un loader que lo soporte con [webpack](https://webpack.js.org/), va a hacer que jest falle, ya que esto no es una sintaxis valida para JavaScript, para hacer que jests lo soporte debemos hacer que todos los imports de css se detecten y manejarlos para evitar el fallo, para hacerlo debes agregar en el `package.json`
+Cuando en nuestros archivos de JS importamos archivos CSS, ya que usamos un loader que lo soporte con [webpack](https://webpack.js.org/), va a hacer que jest falle, ya que esto no es una sintaxis valida para JavaScript, para hacer que jest lo soporte debemos hacer que todos los imports de css se detecten y manejarlos para evitar el fallo, para hacerlo debes agregar en el `package.json`
 
 ```json
 {
@@ -228,7 +228,7 @@ Y usamos el componente en una prueba vamos a obtener algo como:
 <h1 class="title">Hola</h1>
 ```
 
-## Usar Dynamic imports con Jests
+## Usar Dynamic imports con Jest
 
 Si importamos módulos de forma dinámica en nuestros proyectos, vamos a tener problemas, ya que antes configuramos para que los imports se convirtieran en commonjs, pero estos no soportan dynamic imports, necesitamos configurar para poder soportarlos, para esto vamos a usar [babel-plugin-dynamic-import-node](https://www.npmjs.com/package/babel-plugin-dynamic-import-node)
 
