@@ -36,7 +36,6 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
           {css}
-          <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="viewport"
