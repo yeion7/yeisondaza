@@ -5,12 +5,17 @@ import last from 'lodash/last'
 import split from 'lodash/split'
 import getObj from 'ast-get-object'
 import VisibilitySensor from 'react-visibility-sensor'
+import 'prismjs/themes/prism-solarizedlight.css'
 
+import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
-import { rhythm, scale } from '../utils/typography'
+import typography from '../utils/typography'
 import Content, { HTMLContent } from '../components/Content'
 import { MiniCard } from '../components/Card'
 import Background from '../assets/background.png'
+
+
+const { rhythm, scale } = typography
 
 export const Post = ({
   content,
@@ -22,6 +27,7 @@ export const Post = ({
   siteUrl,
   contentComponent,
 }) => {
+
   const PostContent = contentComponent || Content
   return (
     <div
@@ -89,7 +95,7 @@ export default class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteMetadata = get(this.props, 'data.site.siteMetadata')
-    const { previous, next } = this.props.pathContext
+    const { previous, next } = this.props.pageContext
 
     const ast = post.htmlAst
     const images = getObj(ast, { type: 'element', tagName: 'img' })

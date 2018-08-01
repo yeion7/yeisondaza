@@ -2,6 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import get from 'lodash/get'
 import VisibilitySensor from 'react-visibility-sensor'
+import { graphql } from 'gatsby'
 
 import SEO from '../components/SEO'
 import Card from '../components/Card'
@@ -30,7 +31,7 @@ class BlogIndex extends React.Component {
         <header
           style={{
             backgroundImage: `url(${
-              data.background.childImageSharp.sizes.srcWebp
+              data.background.childImageSharp.fluid.srcWebp
             })`,
           }}
           className="header"
@@ -39,7 +40,7 @@ class BlogIndex extends React.Component {
             <div className="header-content">
               <VisibilitySensor>
                 <Img
-                  resolutions={data.yeison.childImageSharp.resolutions}
+                  fixed={data.yeison.childImageSharp.fixed}
                   alt="Yeison foto"
                   className="header-img"
                 />
@@ -106,7 +107,7 @@ class BlogIndex extends React.Component {
                 key={node.frontmatter.path}
                 title={title}
                 path={node.frontmatter.path}
-                tumbnail={node.fields.thumbnail.childImageSharp.resolutions}
+                tumbnail={node.fields.thumbnail.childImageSharp.fixed}
                 date={node.frontmatter.date}
                 timeToRead={node.timeToRead}
                 excerpt={node.excerpt}
@@ -125,15 +126,15 @@ export const pageQuery = graphql`
   query IndexQuery {
     yeison: file(relativePath: { regex: "/yeison.jpg/" }) {
       childImageSharp {
-        resolutions(width: 250, height: 250, quality: 90) {
-          ...GatsbyImageSharpResolutions_withWebp
+        fixed(width: 250, height: 250, quality: 90) {
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     background: file(relativePath: { regex: "/background.png/" }) {
       childImageSharp {
-        sizes(quality: 100) {
-          ...GatsbyImageSharpSizes_withWebp
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -151,8 +152,8 @@ export const pageQuery = graphql`
           fields {
             thumbnail {
               childImageSharp {
-                resolutions(width: 360, height: 230) {
-                  ...GatsbyImageSharpResolutions_withWebp
+                fixed(width: 360, height: 230) {
+                  ...GatsbyImageSharpFixed_withWebp
                 }
               }
             }

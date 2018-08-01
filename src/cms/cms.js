@@ -1,5 +1,5 @@
 import CMS from 'netlify-cms'
-import 'netlify-cms/dist/cms.css'
+// import 'netlify-cms/dist/cms.css'
 
 import PostPreview from './preview-templates/blogPreview'
 
