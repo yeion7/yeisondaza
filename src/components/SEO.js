@@ -62,7 +62,7 @@ const SEO = ({ title, description, image, url, isPost }) => {
       {/* Facebook Card tags */}
 
       <meta property="og:url" content={url} />
-      {isPost && <meta property="og:type" content="article" />}
+      <meta property="og:type" content={isPost ? "article" : "website"} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
