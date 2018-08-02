@@ -41,10 +41,13 @@ recursive(inputDir, [], (err, files) => {
   // version
   for (let fileToConvert of filesToConvert) {
     const urlPath = fileToConvert.replace(inputDir, 'public/amp'); // No inputDir in the URL
+    const originalPath = fileToConvert.replace(inputDir, 'https://yeisondaza.com').replace("/index.html", '');
     const contents = fs.readFileSync(fileToConvert, 'utf8');
     ensureDirectoryExistence(urlPath)
+    console.log({originalPath, fileToConvert, urlPath});
+    
     // Add the amp url link to the top of the page then Save the file
-    fs.writeFileSync(urlPath, ampify(contents, urlPath, ($) => {
+    fs.writeFileSync(urlPath, ampify(contents, originalPath, ($) => {
       /**************************************************************************************
        * Replace certain elements on the page for AMP specifically
        *************************************************************************************/
