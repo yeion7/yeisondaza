@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 const SEO = ({ title, description, image, url, isPost }) => {
+  
   const schemaOrgJSONLD = [
     {
       '@context': 'http://schema.org',
@@ -55,9 +56,9 @@ const SEO = ({ title, description, image, url, isPost }) => {
         {JSON.stringify(schemaOrgJSONLD)}
       </script>
 
-      {/* support webp */}
-      {/* <script type="text/javascript" src="https://unpkg.com/webpjs@0.0.2/webpjs.min.js" async></script> */}
-
+      {
+        isPost && <link rel="amphtml" href={url.replace('.com/', ".com/amp/")} />
+      }
       {/* Facebook Card tags */}
 
       <meta property="og:url" content={url} />
