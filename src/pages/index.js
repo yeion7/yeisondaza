@@ -23,7 +23,7 @@ class BlogIndex extends React.Component {
         <SEO
           title={siteTitle}
           description="JavaScript | Startups | Carreras | Frontend"
-          image={yeison}
+          image={`${siteURL}${yeison}`}
           url={siteURL}
           isPost={false}
         />
