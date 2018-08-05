@@ -6,6 +6,7 @@ import split from 'lodash/split'
 import getObj from 'ast-get-object'
 import VisibilitySensor from 'react-visibility-sensor'
 import 'prismjs/themes/prism-solarizedlight.css'
+import '../css/index.scss'
 
 import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
