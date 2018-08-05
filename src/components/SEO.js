@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 const SEO = ({ title, description, image, url, isPost, date }) => {
-  
+
   const schemaOrgJSONLD = [
     {
       '@context': 'http://schema.org',
@@ -25,7 +25,7 @@ const SEO = ({ title, description, image, url, isPost, date }) => {
     }
   ]
   if (isPost) {
-    schemaOrgJSONLD.push([
+    schemaOrgJSONLD.push(
       {
         '@context': 'http://schema.org',
         '@type': 'BreadcrumbList',
@@ -40,7 +40,8 @@ const SEO = ({ title, description, image, url, isPost, date }) => {
             },
           },
         ],
-      },
+      })
+    schemaOrgJSONLD.push(
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
@@ -51,14 +52,14 @@ const SEO = ({ title, description, image, url, isPost, date }) => {
         "headline": title,
         "image": [
           image
-         ],
+        ],
         "datePublished": date,
         "dateModified": date,
         "author": {
           "@type": "Person",
           "name": "Yeisonn Daza"
         },
-         "publisher": {
+        "publisher": {
           "@type": "Organization",
           "name": "Yeison Daza",
           "logo": {
@@ -67,8 +68,8 @@ const SEO = ({ title, description, image, url, isPost, date }) => {
           }
         },
         "description": description
-      },
-    ])
+      }
+    )
   }
 
   return (
