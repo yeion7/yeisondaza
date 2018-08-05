@@ -3,27 +3,32 @@ import Helmet from 'react-helmet'
 
 const SEO = ({ title, description, image, url, isPost, date }) => {
 
-  const schemaOrgJSONLD = [
-    {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
-      url: url,
-      name: title,
-      alternateName: description,
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "Yeison Daza",
-      "url": "https://yeisondaza.com/",
-      "sameAs": [
-        "https://www.facebook.com/yeison7",
-        "https://instagram.com/yeion7",
-        "https://www.linkedin.com/in/yeion7",
-        "https://twitter.com/yeion7"
-      ]
-    }
-  ]
+  const schemaOrgJSONLD = []
+
+  if (!isPost) {
+    schemaOrgJSONLD.push(
+      {
+        '@context': 'http://schema.org',
+        '@type': 'WebSite',
+        url: url,
+        name: title,
+        alternateName: description,
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Yeison Daza",
+        "url": "https://yeisondaza.com/",
+        "sameAs": [
+          "https://www.facebook.com/yeison7",
+          "https://instagram.com/yeion7",
+          "https://www.linkedin.com/in/yeion7",
+          "https://twitter.com/yeion7"
+        ]
+      }
+    )
+  }
+
   if (isPost) {
     schemaOrgJSONLD.push(
       {
@@ -40,8 +45,7 @@ const SEO = ({ title, description, image, url, isPost, date }) => {
             },
           },
         ],
-      })
-    schemaOrgJSONLD.push(
+      },
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
