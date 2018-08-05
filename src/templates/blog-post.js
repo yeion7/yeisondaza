@@ -43,6 +43,7 @@ export const Post = ({
         description={frontmatter.description}
         image={image ? `${siteUrl}${image}` : Background}
         url={`${siteUrl}/${frontmatter.path}`}
+        date={frontmatter.date}
         isPost
       />
       <h1>{frontmatter.title}</h1>
