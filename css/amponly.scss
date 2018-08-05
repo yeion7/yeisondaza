@@ -5,3 +5,24 @@
   margin-right: auto;
   padding: 2.625rem 1.3125rem;
 }
+
+li {
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex: 1 1 300px;
+  flex-direction: column;
+  min-height: 300px;
+  max-width: 310px;
+  min-width: 300px;
+  overflow: hidden;
+  margin: 0 20px 40px;
+  background: #fff 50%;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
+  transition: all 0.5s ease;
+}
