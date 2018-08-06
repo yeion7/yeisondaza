@@ -32,7 +32,6 @@ recursive(inputDir, [], (err, files) => {
   for (let file of files) {
     // Only select files that end in '.html'.
     if (file.endsWith('.html')) {
-      
       filesToConvert.push(file);
     }
   }
@@ -55,9 +54,9 @@ recursive(inputDir, [], (err, files) => {
       $('amp-video').attr('layout', 'responsive');
       $('amp-video').attr('height', '270');
       $('amp-video').attr('width', '480');
-      // $('amp-img').attr('layout', 'responsive');
-      // $('amp-img').attr('width', '480');
-      // $('amp-img').attr('height', '270');
+      $('amp-img').attr('layout', 'responsive');
+      $('amp-img').attr('width', '480');
+      $('amp-img').attr('height', '270');
 
       // Google Analytics
       $('head').append('<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>');
