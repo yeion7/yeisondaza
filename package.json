@@ -60,7 +60,7 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build && npm run ampify",
+    "build": "rm -rf public && gatsby build && npm run ampify",
     "ampify": "mkdir -p public/amp && node ampify.js"
   }
 }
