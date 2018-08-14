@@ -54,18 +54,20 @@ export const Post = ({
         date={frontmatter.date}
         isPost
       />
-      <h1>{frontmatter.title}</h1>
-      <p
-        style={{
-          ...scale(-1 / 5),
-          display: 'block',
-          marginBottom: rhythm(1),
-          marginTop: rhythm(0.5),
-        }}
-      >
-        {frontmatter.date}
-      </p>
-      <PostContent content={content} className="post" />
+      <article>
+        <h1>{frontmatter.title}</h1>
+        <p
+          style={{
+            ...scale(-1 / 5),
+            display: 'block',
+            marginBottom: rhythm(1),
+            marginTop: rhythm(0.5),
+          }}
+        >
+          {frontmatter.date}
+        </p>
+        <PostContent content={content} className="post" />
+      </article>
       <hr
         style={{
           marginBottom: rhythm(1),
