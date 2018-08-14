@@ -137,3 +137,32 @@
   text-shadow: none;
   background-image: none;
 }
+
+.social {
+  &-container {
+    transform: translateY(150px);
+    top: 0;
+    position: fixed;
+    left: 5%;
+
+    & li {
+      list-style: none;
+    }
+    @media (max-width: 1000px) {
+      display: block;
+      position: initial;
+
+      & ul {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 1333px) {
+      left: 10%;
+    }
+    @media (min-width: 1440px) {
+      left: 20%;
+    }
+  }
+
+}

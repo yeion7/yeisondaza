@@ -42,6 +42,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
+    "react-share": "^2.2.0",
     "react-typography": "^0.16.13",
     "react-visibility-sensor": "^3.11.0",
     "recursive-readdir": "^2.2.2",
