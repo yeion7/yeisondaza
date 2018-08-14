@@ -4,6 +4,11 @@ import doelgerTheme from 'typography-theme-doelger'
 doelgerTheme.overrideThemeStyles = () => ({
   '.post > p': {
     fontSize: '21px',
+    textRendering: "optimizeLegibility",
+    lineHeight: "1.58",
+    letterSpacing: "-.003em",
+    wordBreak: 'break-word',
+    wordWrap: 'break-word'
   },
   '.post .gatsby-resp-image-link': {
       color: "inherit",
