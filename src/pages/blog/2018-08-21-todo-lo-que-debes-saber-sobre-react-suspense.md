@@ -5,9 +5,9 @@ imagen: /img/photo-1508303852202-4753808b8cd7.jpeg
 title: 'Todo lo que debes saber sobre React Suspense'
 date: '2018-08-21T09:45:54-05:00'
 description: >-
-  React en su versión 17 va a tener cambios importantes agregando un dos nuevas características React Suspense y Time Slicing, hoy hablaremos sobre la primera de ellas, veamos todo lo que debes saber sobre React Suspense.
+  React en su versión 17 va a tener cambios importantes agregando dos nuevas características React Suspense y Time Slicing, hoy hablaremos sobre la primera de ellas, veamos todo lo que debes saber sobre React Suspense.
 ---
-React en su versión 17 va a tener cambios importantes agregando un dos nuevas características React Suspense y Time Slicing, hoy hablaremos sobre la primera de ellas, veamos todo lo que debes saber sobre React Suspense.
+React en su versión 17 va a tener cambios importantes agregando dos nuevas características React Suspense y Time Slicing, hoy hablaremos sobre la primera de ellas, veamos todo lo que debes saber sobre React Suspense.
 
 ![Imagen de unsplash https://unsplash.com/photos/eZKJlDM3PKw](/img/photo-1508303852202-4753808b8cd7.jpeg)
 
@@ -108,7 +108,7 @@ Veamos uno por uno
 
 ## Crear un recurso con React Suspense
 
-Como dije antes React Suspense va a permitirnos pausar el render de un componente hasta que los datos asíncronos se resuelvan, para esto debemos crear un recurso con los datos asíncronos que necesitamos, para esto vamos a usar una pequeña librería llamada `simple-cache-provider`.
+Como dije antes React Suspense va a permitirnos pausar el render de un componente hasta que los datos asíncronos se resuelvan, para esto debemos crear un recurso con los datos asíncronos que necesitamos, vamos a usar una pequeña librería llamada `simple-cache-provider`.
 
 Está librería tiene un método llamado `createResource` el cual recibe una función asíncrona y crea un recurso.
 
