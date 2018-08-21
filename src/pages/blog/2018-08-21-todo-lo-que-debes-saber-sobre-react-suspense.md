@@ -20,7 +20,7 @@ Estos dos factores y como solucionarlos nos llevan a tomar decisiones técnicas 
 
 *React Suspense*, nos da una forma estándar de requerir datos asíncronos, enfocándose principalmente en la experiencia del usuario.
 
-*Time Slicing*, no da una forma de asignar la prioridad que tienen los cambios en la interfaz de nuestra aplicación, logrando tener aplicaciones con mejor rendimiento.
+*Time Slicing*, nos da una forma de asignar la prioridad que tienen los cambios en la interfaz de nuestra aplicación, logrando tener aplicaciones con mejor rendimiento.
 
 Hoy vamos a ver en detalle como usar React Suspense, (si quieres ver un demo de como funcionan ambos puedes ver la [charla de Dan Abramon en JSConf Iceland](https://www.youtube.com/watch?v=v6iR3Zk4oDY)
 
@@ -158,7 +158,7 @@ function UserDetails({ id }) {
 
 Cómo puedes ver podemos usar el recurso dentro del render del componente que necesite la información, el método `read` va a tomar como primer argumento el cache y los demás argumentos se los va a pasar a la función asíncrona que tiene.
 
-De esta forma ya tenemos un componte asíncrono, que hace un llamado a un API carga datos y se muestra en pantalla, ahora veamos como usar este componente en nuestras interfaces.
+De esta forma ya tenemos un componte asíncrono, que hace un llamado a un API, carga datos y se muestra en pantalla, ahora veamos como usar este componente en nuestras interfaces.
 
 ## Componente Placeholder
 
@@ -258,7 +258,7 @@ function UserDetails({id}) {
 }
 ```
 
-Así una ves inicie a cargar el recurso de los detalles, también se va a cargar los comentarios. 
+Así una vez inicie a cargar el recurso de los detalles, también se va a cargar los comentarios. 
 
 Algo importante es que si el usuario se va a otra vista no pasa nada, React no bloquea la página o va a fallar porque no se use los recursos que están cargando.
 
