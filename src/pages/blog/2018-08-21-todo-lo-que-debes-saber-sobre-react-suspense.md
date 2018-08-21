@@ -244,10 +244,10 @@ import { fetchUserDetails, fetchCommets } from 'api'
 
 const cache = createCache()
 const UserDetailsResource = createResource(fetchUserDetails)
-const UserCommetssResource = createResource(fetchCommets)
+const UserCommentsResource = createResource(fetchCommets)
 
 function UserDetails({id}) {
-  UserCommetssResource.preload(cache, id)
+  UserCommentsResource.preload(cache, id)
   const user = UserDetailsResource.read(cache, id);
   return <div>
     <h1>{user.name}</h1>
