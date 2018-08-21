@@ -22,15 +22,15 @@ Estos dos factores y como solucionarlos nos llevan a tomar decisiones técnicas 
 
 *Time Slicing*, no da una forma de asignar la prioridad que tienen los cambios en la interfaz de nuestra aplicación, logrando tener aplicaciones con mejor rendimiento.
 
-Hoy vamos a ver en detalle como usar React Suspense
+Hoy vamos a ver en detalle como usar React Suspense, (si quieres ver un demo de como funcionan ambos puedes ver la [charla de Dan Abramon en JSConf Iceland](https://www.youtube.com/watch?v=v6iR3Zk4oDY)
 
-> Todas las características tratadas en este post no están listas para ser usadas en producción, aún pueden haber cambios antes de tener el lanzamiento final.
+> Todas las características tratadas en este post no están listas para ser usadas en producción, aún pueden existir cambios antes de tener el lanzamiento final.
 
-## Qué es React Suspense
+## ¿Qué es React Suspense?
 
 React Suspense es el codename del feature que nos da una forma estándar de poder cargar datos asíncronos en nuestros componentes.
 
-La forma en la que funciona en pocas palabras es que cuando un componente necesite realizar una acción asíncrona (cómo hacer fetch de datos) antes de mostrarse, React va a "pausar" el render del componente hasta tener los datos.
+La forma en la que funciona en pocas palabras es que cuando un componente necesite realizar una acción asíncrona (como hacer fetch de datos) antes de mostrarse, React va a "pausar" el render del componente hasta tener los datos.
 
 Para entender esto, debemos ver un poco como funciona el render de un componente en React. 
 
@@ -299,7 +299,7 @@ function UserPicture({ source }) {
 );
 ```
 
-De esta forma podríamos cargar recursos, incluso podríamos pre-cargarlos (recuerda `preload`), y si tardan mucho en cargarlas podríamos mostrar un fallback.
+De esta forma podríamos cargar recursos, incluso podríamos pre-cargarlos (recuerda `preload`), puedes ver como implementar la carga de otros recursos en el codebase de [react-async-elements](https://github.com/palmerhq/react-async-elements/tree/master/src).
 
 ## Code Splitting con React suspense
 
