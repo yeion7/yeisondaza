@@ -4,7 +4,6 @@ import head from 'lodash/head'
 import last from 'lodash/last'
 import split from 'lodash/split'
 import getObj from 'ast-get-object'
-import VisibilitySensor from 'react-visibility-sensor'
 import 'prismjs/themes/prism-solarizedlight.css'
 import '../css/index.scss'
 
@@ -74,7 +73,6 @@ export const Post = ({
         }}
       />
 
-      <VisibilitySensor>
         <ul
           style={{
             display: 'flex',
@@ -97,7 +95,6 @@ export const Post = ({
             </li>
           )}
         </ul>
-      </VisibilitySensor>
     </div>
   )
 }

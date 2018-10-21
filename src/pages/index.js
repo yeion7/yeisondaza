@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import get from 'lodash/get'
-import VisibilitySensor from 'react-visibility-sensor'
 import { graphql } from 'gatsby'
 
 import SEO from '../components/SEO'
@@ -38,13 +37,11 @@ class BlogIndex extends React.Component {
         >
           <div className="header-inner">
             <div className="header-content">
-              <VisibilitySensor>
-                <Img
-                  fixed={data.yeison.childImageSharp.fixed}
-                  alt="Yeison foto"
-                  className="header-img"
-                />
-              </VisibilitySensor>
+              <Img
+                fixed={data.yeison.childImageSharp.fixed}
+                alt="Yeison foto"
+                className="header-img"
+              />
               <h1 className="header-title">Yeison Daza</h1>
               <h2 className="header-subtitle">Frontend Developer</h2>
 
