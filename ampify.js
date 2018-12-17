@@ -40,7 +40,7 @@ recursive(inputDir, [], (err, files) => {
   // version
   for (let fileToConvert of filesToConvert) {
     const urlPath = fileToConvert.replace(inputDir, 'public/amp'); // No inputDir in the URL
-    const originalPath = fileToConvert.replace(inputDir, 'https://yeisondaza.com').replace("/index.html", '');
+    const originalPath = fileToConvert.replace(inputDir, 'https://yeisondaza.com').replace("/index.html", '/');
     const contents = fs.readFileSync(fileToConvert, 'utf8');
     ensureDirectoryExistence(urlPath)
     

@@ -104,6 +104,7 @@ const SEO = ({ title, description, image, url, isPost, date }) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <link rel="canonical" href={`${url}/`} />
     </Helmet>
   )
 }
