@@ -39,7 +39,7 @@ class BlogIndex extends React.Component {
             <div className="header-content">
               <Img
                 fixed={data.yeison.childImageSharp.fixed}
-                alt="Yeison foto"
+                alt="Foto de Yeison"
                 className="header-img"
               />
               <h1 className="header-title">Yeison Daza</h1>
@@ -50,10 +50,10 @@ class BlogIndex extends React.Component {
                   className="no-link"
                   href="https://www.facebook.com/yeion7/"
                   target="_blank"
-                  aria-label="url fanpage"
+                  aria-label="fanpage facebook"
                   rel="noopener"
                 >
-                  <i className="icon-facebook" />
+                  <i className="icon-facebook" aria-hidden/>
                 </a>
                 <a
                   target="_blank"
@@ -62,34 +62,34 @@ class BlogIndex extends React.Component {
                   aria-label="url whatsapp"
                   rel="noopener"
                 >
-                  <i className="icon-twitter" />
+                  <i className="icon-twitter" aria-hidden/>
                 </a>
                 <a
                   target="_blank"
                   className="no-link"
                   href="https://www.instagram.com/yeion7/"
-                  aria-label="url whatsapp"
+                  aria-label="instagram"
                   rel="noopener"
                 >
-                  <i className="icon-instagram" />
+                  <i className="icon-instagram" aria-hidden />
                 </a>
                 <a
                   target="_blank"
                   className="no-link"
                   href="https://www.linkedin.com/in/yeion7/"
-                  aria-label="url whatsapp"
+                  aria-label="whatsapp"
                   rel="noopener"
                 >
-                  <i className="icon-linkedin" />
+                  <i className="icon-linkedin" aria-hidden />
                 </a>
                 <a
                   target="_blank"
                   className="no-link"
                   href="https://github.com/yeion7"
-                  aria-label="url whatsapp"
+                  aria-label="github"
                   rel="noopener"
                 >
-                  <i className="icon-github" />
+                  <i className="icon-github" aria-hidden />
                 </a>
               </div>
             </div>
