@@ -102,7 +102,7 @@ Para usar React suspense necesitamos básicamente tres cosas,
 
 1. Un recurso
 2. Un sistema de cache
-3. Usar un Placeholder
+3. Usar un Suspense
 
 Veamos uno por uno
 
@@ -160,27 +160,27 @@ Cómo puedes ver podemos usar el recurso dentro del render del componente que ne
 
 De esta forma ya tenemos un componte asíncrono, que hace un llamado a un API, carga datos y se muestra en pantalla, ahora veamos como usar este componente en nuestras interfaces.
 
-## Componente Placeholder
+## Componente Suspense
 
-Ya que nuestro componente es asíncrono y va a depender que se resuelva el recurso para mostrarse necesitamos una forma de poder mostrar un indicador visual si esta carga dura mucho tiempo, para esto React tiene un nuevo componente llamado `Placeholder`
+Ya que nuestro componente es asíncrono y va a depender que se resuelva el recurso para mostrarse necesitamos una forma de poder mostrar un indicador visual si esta carga dura mucho tiempo, para esto React tiene un nuevo componente llamado `Suspense`
 
-Vamos a necesitar envolver todos nuestros componentes asíncronos con `Placeholder` (React arroja un warning si no lo haces)
+Vamos a necesitar envolver todos nuestros componentes asíncronos con `Suspense` (React arroja un warning si no lo haces)
 
 ```js
-import React, { Placeholder } from 'react';
+import React, { Suspense } from 'react';
 
 class App extends Component {
   render() {
     return (
-      <Placeholder delayMs={500} fallback={<Spinner size="medium" />}>
+      <Suspense delayMs={500} fallback={<Spinner size="medium" />}>
         <UserDetails id={this.props.id}/>
-      </Placeholder>
+      </Suspense>
     )
   }
 }
 ```
 
-Placeholder recibe dos props, `delayMs` y `fallback`
+Suspense recibe dos props, `delayMs` y `fallback`
 
 `fallback` es un componente que debería mostrar si la carga de nuestro recurso no sucede rápido, y `delayMs`es el tiempo que debería esperar antes de mostrar este fallback.
 
@@ -189,33 +189,33 @@ Podríamos decirle que espere `500ms`, en conexiones rápidas este fallback nunc
 Esto también nos da más flexibilidad, ya que imagina que todos los endpoints que consultas no son igual de rápidos, si sabes que un endpoint demora en responder puedes mostrar el fallback lo antes posible y esperar que el rápido si se muestre, algo así 
 
 ```js
-import React, { Placeholder, Fragment } from 'react';
+import React, { Suspense, Fragment } from 'react';
 import Spinner from 'spinner'
 
 class App extends Component {
   render() {
     return (
       <Fragment>
-        <Placeholder delayMs={500} fallback={<Spinner size="medium" />}>
+        <Suspense delayMs={500} fallback={<Spinner size="medium" />}>
           <UserDetails id={this.props.id}/>
-        </Placeholder>
-        <Placeholder delayMs={1} fallback={<Spinner size="medium" />}>
+        </Suspense>
+        <Suspense delayMs={1} fallback={<Spinner size="medium" />}>
           <UserComments id={this.props.id}/>
-        </Placeholder>
+        </Suspense>
       </Fragment>
     )
   }
 }
 ```
 
-`Placeholder` puede envolver a más de un componente asíncrono, pero en este caso queremos que el tiempo en el que se muestra el fallback sea diferente.
+`Suspense` puede envolver a más de un componente asíncrono, pero en este caso queremos que el tiempo en el que se muestra el fallback sea diferente.
 
-## Placeholders anidados 
+## Suspense anidado
 
-Los componentes asíncronos puedes estar dentro de otros componentes asíncronos sin ningún problema, así en nuestro ejemplo una ver cargue los detalles de un usuario, podríamos iniciar a cargar sus comentarios para hacerlo de nuevo necesitamos usar el componente `Placeholder`
+Los componentes asíncronos puedes estar dentro de otros componentes asíncronos sin ningún problema, así en nuestro ejemplo una ver cargue los detalles de un usuario, podríamos iniciar a cargar sus comentarios para hacerlo de nuevo necesitamos usar el componente `Suspense`
 
 ```js
-import React, { Placeholder } from 'react';
+import React, { Suspense } from 'react';
 import Spinner from 'spinner'
 import { createCache, createResource } from 'simple-cache-provider';
 import { fetchUserDetails } from 'api'
@@ -227,9 +227,9 @@ function UserDetails({id}) {
   const user = UserDetailsResource.read(cache, id);
   return <div>
     <h1>{user.name}</h1>
-    <Placeholder delayMs={500} fallback={<Spinner size="medium" />}>
+    <Suspense delayMs={500} fallback={<Spinner size="medium" />}>
       <UserComments userId={id} />
-    </Placeholder>
+    </Suspense>
   </div>
 }
 ```
@@ -237,7 +237,7 @@ function UserDetails({id}) {
 Esto está bastante bien, pero dependemos que la carga del recurso de los detalles del usuario termine para que inicie la carga de los comentarios, si quisiéramos mejorar esto podemos hacer uso del `preload` del recurso 
 
 ```js
-import React, { Placeholder } from 'react';
+import React, { Suspense } from 'react';
 import Spinner from 'spinner'
 import { createCache, createResource } from 'simple-cache-provider';
 import { fetchUserDetails, fetchCommets } from 'api'
@@ -251,9 +251,9 @@ function UserDetails({id}) {
   const user = UserDetailsResource.read(cache, id);
   return <div>
     <h1>{user.name}</h1>
-    <Placeholder delayMs={500} fallback={<Spinner size="medium" />}>
+    <Suspense delayMs={500} fallback={<Spinner size="medium" />}>
       <UserComments id={id} />
-    </Placeholder>
+    </Suspense>
   </div>
 }
 ```
@@ -287,14 +287,14 @@ function Img({src, alt, ...rest}) {
 }
 ```
 
-Y para usarla de nuevo basta con envolver este componente `Img` en `Placeholder`
+Y para usarla de nuevo basta con envolver este componente `Img` en `Suspense`
 
 ```js
 function UserPicture({ source }) {
   return (
-    <Placeholder delayMs={1500} fallback={<img src={source} alt="poster" />}>
+    <Suspense delayMs={1500} fallback={<img src={source} alt="poster" />}>
       <Img src={source}/>
-    </Placeholder>
+    </Suspense>
   )
 );
 ```
@@ -308,7 +308,7 @@ Sí estabas pensando que un componente que se requiere de forma asíncrona tambi
 `React.lazy` es simplemente una abstracción de crear un recurso, que nos permite requerir asincronamente un componente, usando la sintaxis de `import`
 
 ```js
-import React, { Placeholder } from 'react';
+import React, { Suspense } from 'react';
 import Spinner from 'spinner';
 
 import UserPage = React.lazy(() => import('../userPage'))
@@ -316,15 +316,15 @@ import UserPage = React.lazy(() => import('../userPage'))
 class App extends Component {
   render() {
     return (
-      <Placeholder delayMs={500} fallback={<Spinner size="medium" />}>
+      <Suspense delayMs={500} fallback={<Spinner size="medium" />}>
         <UserPage />
-      </Placeholder>
+      </Suspense>
     )
   }
 }
 ```
 
-También debes usar `Placeholder` para manejar si el componente tarda mucho en cargarse.
+También debes usar `Suspense` para manejar si el componente tarda mucho en cargarse.
 
 ## Cómo usar React suspense hoy
 
