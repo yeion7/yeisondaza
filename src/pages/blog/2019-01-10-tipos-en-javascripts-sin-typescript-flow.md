@@ -61,7 +61,7 @@ La segunda es agregar en la raíz del proyecto un archivo `jsconfig.json`, con l
 }
 ```
 
-Puedes leer más en detalle todas las opciones de configuración ![aquí](https://code.visualstudio.com/docs/languages/jsconfig).
+Puedes leer más en detalle todas las opciones de configuración [aquí](https://code.visualstudio.com/docs/languages/jsconfig).
 
 También podrías estar interesado en tener un paso de CI que te permita checar los tipos, para esto basta con añadir un script en el `package.json` con
 
