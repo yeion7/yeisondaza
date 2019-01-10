@@ -10,29 +10,29 @@ description: >-
 
 JavaScript no es un lenguaje que sea estrictamente [tipado](/entendiendo-los-tipos-en-javascript) y muchos proyectos han escalado bastante bien sin usar tipado, pero la realidad es que a medida que crece un proyecto su complejidad aumenta y simplemente existen muchos detalles que ya no podemos tener en mente.
 
-Los tipos nos ayudan a reducir esta complejidad de varias formas, algunas son:
+Los tipos nos ayudan a reducir esta complejidad de varias formas, algunas de estas son:
 
-* *Evitar errores comunes*, ya que al conocer los input/outputs o interfaces de los modulos que usamos nos ayuda a usarlos como se debería.
-* *Documentación*, Poder tener claro los tipos de datos que acepta o retorna un modulo sin tener que ir a buscar su definición es bastante útil, más cuando es un proyecto grande.
+* *Evitar errores comunes*, ya que al conocer los input/outputs o interfaces de los módulos que usamos nos ayuda a usarlos como se debería.
+* *Documentación*, Poder tener claro los tipos de datos que acepta o retorna un módulo sin tener que ir a buscar su definición es bastante útil, más cuando es un proyecto grande.
 * *Soporte IDE*, la integración y sugerencias de los IDE/Editores es bastante útil cuando programas.
-* *Refactorizar*, poder modificar partes de tu código sin tener regresiones o infiriendo donde se esta usando lo que cambias resulta una de las mejores ventajas que dan los tipos.
+* *Refactorizar*, poder modificar partes de tu código sin tener regresiones o infiriendo donde se está usando lo que cambias resulta una de las mejores ventajas que dan los tipos.
+parámetros
+Estas son algunas de las razones por las cuales son una gran idea integrar tipos en tus proyectos, te ayudará en general al developer experience y poder prevenir errores antes de que el producto llegue a tus usuarios.
 
-Estas son algunas de las razones por las cuales son una gran idea integrar tipos en tus proyectos, te ayudara en general al developer experience y poder prevenir errores antes de que el producto llegue a tus usuarios.
-
-> Si no usas una forma de definir tipos esta bien, muchos proyectos funcionan sin esto y si no sientes tener el problema no los integres, ya que esto solo va a añadir otra capa de complejidad a tus desarrolladores.
+> Si no usas una forma de definir tipos está bien, muchos proyectos funcionan sin esto y si no sientes tener el problema no los integres, ya que esto solo va a añadir otra capa de complejidad a tus desarrolladores.
 
 
 ## JSDOC + TSC
 
-Las dos alternativas más comunes al integrar tipos en JavaScript es usas [Flow](https://flow.org/) o [TypeScript](https://www.typescriptlang.org/), ambas tienen props y contras, pero ambas van a añadir una capa de transpilación a tu código y es posible que integrarlo a tu flujo de desarrollo no resulte tan sencillo.
+Las dos alternativas más comunes al integrar tipos en JavaScript es usar [Flow](https://flow.org/) o [TypeScript](https://www.typescriptlang.org/), ambas tienen props y contras, pero ambas van a añadir una capa de transpilación a tu código y es posible que integrarlo a tu flujo de desarrollo no resulte tan sencillo.
 
-> Toma tiempo y experiencia siendo proeficiente con los tipos si tienes background en lenguajes tipados
+> Toma tiempo y experiencia siendo eficiente con los tipos si tienes background en lenguajes tipados
 
-Una alternativa es usar [JSDoc](http://usejsdoc.org/) que es una forma estandar de añadir documentación al código en JS, usandolo junto con TSC o TS (solo para chequeo de tipos) podemos tener las mismas ventajas de usar tipado.
+Una alternativa es usar [JSDoc](http://usejsdoc.org/) que es una forma estándar de añadir documentación al código en JS, usandolo junto con TSC o TS (solo para chequeo de tipos) podemos tener las mismas ventajas de usar tipado.
 
-Una de las razones por las cuales usar este enfoque es que no requires tener un paso más de transpilación, el código que escribes sigue siendo JS y no necesitas migrar o cambiar las herramientas que usas en desarrollo.
+Una de las razones por las cuales usar este enfoque es que no requires o require tener un paso más de transpilación, el código que escribes sigue siendo JS y no necesitas migrar o cambiar las herramientas que usas en desarrollo.
 
-También si usas [VSCode](https://code.visualstudio.com/docs/languages/javascript), este soporta JSDoc para poder usar intelliSense, permitiendo mejorar el autocompletado, información de parametros, etc.
+También si usas [VSCode](https://code.visualstudio.com/docs/languages/javascript), este soporta JSDoc para poder usar intelliSense, permitiendo mejorar el autocompletado, información de parámetros, etc.
 
 ## Configuración
 
@@ -212,7 +212,7 @@ const gte = (a, b) => a > b
 
 ## Generic
 
-Para poder usar valores genericos podemos usar `@template`
+Para poder usar valores genéricos podemos usar `@template`
 
 ```js
 /**
