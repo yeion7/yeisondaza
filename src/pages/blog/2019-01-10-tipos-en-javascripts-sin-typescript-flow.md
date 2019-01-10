@@ -152,7 +152,7 @@ const opts = { firstName: 'Joe', lastName: 'Bodoni' } // no va a mostrar error
 
 ## Definir tipos personalizados 
 
-Algo que puedes necesitar hacer es reutilizar un tipo en varios lugares, una forma para hacer esto es definir un tipo y usarlo donde se necesite.
+Podemos crear tipos personalizados, esto es una forma para crear tipos personalizados y podemos reutilizarlos.
 
 Para declarar un tipo personalizado usamos `@typedef`
 
@@ -178,7 +178,8 @@ const getUpperName = (person) => person.name.toUpperCase()
 
 Cuando declaramos funciones podemos definir que valores va a recibir y retornar una función, tenemos varias sintaxis que podríamos usar.
 
-* Sintaxis estandar de JSDoc
+#### Sintaxis estándar de JSDoc
+
 ```js
 /**
  * 
@@ -190,7 +191,7 @@ const gte = (a, b) => a > b
 
 ```
 
-* Sintaxis más parecida a TS
+#### Sintaxis más parecida a TS
 
 ```js
 /**
@@ -199,7 +200,8 @@ const gte = (a, b) => a > b
 const gte = (a, b) => a > b
 ```
 
-* Sintaxis parecida a Clojure
+#### Sintaxis parecida a Clojure
+
 ```js
 
 /**
@@ -227,7 +229,7 @@ En este caso `identity` va a recibir cualquier tipo, pero el tipo que reciba es 
 
 ## Importar tipos
 
-Algo que podríamos querer hacer es importar tipos entre archivos, de forma estandar JSDoc no permite hacer esto, pero VSCode permite utilizar `import` para poder lograr importar definiciones de tipos.
+También podemos importar tipos entre archivos, de forma estandar JSDoc no permite hacer esto, pero VSCode permite utilizar `import` para poder lograr importar definiciones de tipos.
 
 ```js
 /**
