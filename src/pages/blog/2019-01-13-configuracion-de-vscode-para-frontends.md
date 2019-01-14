@@ -40,13 +40,13 @@ Una de las partes principales de VSCode son la calidad de sus extensiones y lo �
 
 - [vscode-npm-script](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script), ver/ejecutar los scripts que tiene cada projecto sin tener que ir a buscarlos.
 
-### intellisense
+### Intellisense
 
 - [vscodeintellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode), mejorar las sugerencias que hace tu editor con IA, lo uso desde hace poco y aún estoy evaluando que tal funciona
 
 - [path-intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense), poder tener autocompletado cuando importo un modulo.
 
-### Linting/Formating
+### Linting/Formatting
 
 - [vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), ver en tiempo de desarrollo que reglas de formato o buenas practicas no he cumplido.
 
@@ -62,7 +62,7 @@ Una de las partes principales de VSCode son la calidad de sus extensiones y lo �
 
 - [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare), Si trabajas con equipos distribuidos o necesitas colaborar con alguién esta es la mejor forma de hacerlo, puedes compartir tu código, tener un chat, audio o incluso compartir tu servidor local
 
-### snippets
+### Snippets
 
 - [atom-keybindings](https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings), durante mucho tiempo use atom como mi editor principal y esta extensión me ayudo un montón para migrar.
 
@@ -70,7 +70,7 @@ Una de las partes principales de VSCode son la calidad de sus extensiones y lo �
 
 - [jest-snippets](https://marketplace.visualstudio.com/items?itemName=andys8.jest-snippets), uso jest como mi principal framework de testing y este conjunto de snippets se ajustan perfecto a mi proceso.
 
-### testing
+### Testing
 
 - [vscode-jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest), tener feedback de si rompo uno de mis test en tiempo real o hacer debug fácilmente, esta extensión es increíble si haces tests con jest
 
