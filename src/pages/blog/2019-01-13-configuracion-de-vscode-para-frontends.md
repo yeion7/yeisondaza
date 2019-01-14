@@ -2,7 +2,7 @@
 templateKey: blog
 path: configuración-de-vscode-para-frontends
 imagen: /img/blake-connally-373084-unsplash.jpg
-title: 'Configuración de mi editor'
+title: 'La configuración que uso en VSCode'
 date: '2019-01-13T09:45:54-05:00'
 description: >-
   Una de las cosas más importante para tu productividad como programador es utilizar las capacidades de tu editor al máximo para ayudarte en todo el proceso de desarrollo, hoy quiero compartirles la configuración de mi editor.
