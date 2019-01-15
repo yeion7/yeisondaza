@@ -1,6 +1,6 @@
 ---
 templateKey: blog
-path: configuración-de-vscode-para-frontends
+path: configuracion-de-vscode-para-frontends
 imagen: /img/blake-connally-373084-unsplash.jpg
 title: 'La configuración que uso en VSCode'
 date: '2019-01-13T09:45:54-05:00'
