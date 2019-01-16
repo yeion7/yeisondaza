@@ -137,6 +137,9 @@ export default class HTML extends React.Component {
             rel="stylesheet"
             type="text/css"
           />
+          <noscript>
+            Para poder utilizar el sitio con todas sus capacidades debes tener activado JavaScript
+          </noscript>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
