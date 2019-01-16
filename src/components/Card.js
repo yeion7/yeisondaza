@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 const Card = ({ path, tumbnail, date, timeToRead, excerpt, title }) => {
   return (
     <article className="card" key={path}>
-      <Link to={path} className="card-image-link no-link" aria-label={title}>
+      <Link to={path} className="card-image-link no-link" aria-label={title} z-index="-1">
         <Img resolutions={tumbnail} className="card-image " />
       </Link>
       <div className="card-content">
