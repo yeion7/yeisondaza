@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/yeion7/yeisondaza/issues"
   },
+  "engines": {
+    "node": "10.16.3"
+  },
   "dependencies": {
     "ampifyjs": "0.0.3",
     "ast-get-object": "1.4.1",
