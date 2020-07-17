@@ -37,7 +37,7 @@
     "gatsby-source-filesystem": "2.3.8",
     "gatsby-transformer-remark": "2.8.13",
     "gatsby-transformer-sharp": "2.5.3",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "netlify-cms": "2.10.49",
     "node-sass": "4.14.1",
     "prismjs": "1.20.0",
