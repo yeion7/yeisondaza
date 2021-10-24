@@ -13,24 +13,24 @@ Lo primero que necesitamos para comenzar a implementar pruebas en cualquier proy
 
 ![Imagen persona en el computador,  NordWood Themes @nordwood  NordWood Themes](/img/photo-1516542076529-1ea3854896f2.jpeg)
 
-## ¿Porqué jest?
+## ¿Por qué jest?
 
 Jest es una librería que nos permite escribir y ejecutar tests, es desarrollada por Facebook y usada por plataformas como [airbnb](https://www.airbnb.com), [twitter](https://twitter.com/), [spotify](https://www.spotify.com/), [resuelve](https://resuelvetudeuda.com/), etc.
 
 Algunas de las características que creo hacen a jest la mejor opción hoy, son:
 
-* Casí cero configuración para comenzar a usarlo, depende de las cosas que uses en el proyecto
-* Es extremadamente rápido, usar workers para paralelizar su ejecución
-* Permite usar snapshops testing 📸
+* Casi cero configuración para comenzar a usarlo, depende de las cosas que uses en el proyecto
+* Es extremadamente rápido, usa workers para paralelizar su ejecución
+* Permite usar snapshot testing 📸
 * Los mensajes de error/feedback son muy claros
 * Detecta y utiliza la configuración de babel
 * Puedes tener el reporte del coverage sin necesidad de instalar algo más
-* Es extendible, puedes crear tus matchers personalizados o incluso correr pruebas de otros lenguajes 🤯.
+* Es extensible, puedes crear tus matchers personalizados o incluso correr pruebas de otros lenguajes 🤯.
 * Se pueden hacer tests de frontend y backend, corriendo en paralelo si tiene un monorepo
 
 ## Instalar Jest
 
-Cómo les contaba instalar jest implica casí cero configuración, solo debemos agregar `jest` a nuestras dependencias, con:
+Cómo les contaba instalar jest implica casi cero configuración, solo debemos agregar `jest` a nuestras dependencias, con:
 
 ```bash
 npm install --save-dev jest
@@ -50,7 +50,7 @@ Ahora, si ejecutas `npm run tests`, va a correr jest pero va a arrojar un error,
 
 Por defecto busca los archivos que estén dentro de una carpeta `__tests__` y que su nombre termine con `.test.js` o `.spec.js`, también por defecto ignora todo dentro de `node_modules`.
 
-El _"hola mundo"_ de los test es solo crear un archivo (donde gustes) dentro del proyecto `__tests__/index.test.js`, y añade el siguiente contenido.
+El _"hola mundo"_ de los test es sólo crear un archivo (donde gustes) dentro del proyecto `__tests__/index.test.js`, y añade el siguiente contenido.
 
 ```js
 // __tests__/index.test.js
@@ -61,9 +61,9 @@ describe('initial', () => {
 })
 ```
 
-Esto simplemente va a probar que `true` sea igual a `true`, si vuelves a ejecutar npm test, vas a ver como dice que paso un test.
+Esto simplemente va a probar que `true` sea igual a `true`, si vuelves a ejecutar `npm test`, vas a ver como dice que paso un test.
 
-Con esto ya tendríamos todo lo necesario para proyectos sencillos, pero que pasa si usamos cosas como importar css/scss en JS, dynamic imports, ES modules, etc. Vamos a ver como configurar algunas cosas particulares.
+Con esto ya tendríamos todo lo necesario para proyectos sencillos, pero qué pasa si usamos cosas como importar css/scss en JS, dynamic imports, ES modules, etc. Vamos a ver como configurar algunas cosas particulares.
 
 ## Configurar ES Modules en Jest
 
@@ -100,7 +100,7 @@ y dentro del `package.json` llamar la configuración usando
 }
 ```
 
-Segúnda opción usar envirotments de babel
+Segunda opción usar envirotments de babel
 
 ```json
 {
@@ -193,7 +193,7 @@ Lo que estamos haciendo es decirle a jest que cuando encuentre un import que hag
 module.exports = {}
 ```
 
-Esto también funciona si estas cargando archivo `.graphql`, `.svg` o imagenes dentro de JS
+Esto también funciona si estas cargando archivos `.graphql`, `.svg` o imagenes dentro de JS
 
 ## Usar CSS Modules con Jest
 
@@ -263,7 +263,7 @@ Por ahora js-dom no soporta local storage, debemos agregarlo nosotros, para esto
 }
 ```
 
-> `setupFiles` permite especificar una serie de módulos que deben ejecutarse antes de lo tests
+> `setupFiles` permite especificar una serie de módulos que deben ejecutarse antes de los tests
 
 O podríamos escribir nuestra propia versión de local storage (acá un buen issue sobre el tema), para esto podemos utilizar `setupTestFrameworkScriptFile` que nos permite ejecutar un archivo antes de que los tests se ejecuten.
 
